@@ -8,13 +8,11 @@ import BottomNav from '../partials/BottomNav';
 
 import MyLogo from '../assets/img/me.png';
 
-import MainLogo from '../assets/img/dila_logo.png';
-
 import DownloadFile from '../contents/Dilshan_Liyanage_Resume.pdf';
 
 const About = () => {
     
-    const param1 = 'About';
+    const param1 = "About Me";
 
     const downloadResume = () => {
         const link = document.createElement('a');
@@ -25,9 +23,9 @@ const About = () => {
 
   return (
 
-    <div>
+    <>
 
-        <MainNav title={param1} src={MainLogo}/>
+        <MainNav title={param1} />
 
         <main className="container" style={{ marginTop: '6rem', marginBottom: '3rem' }}>
 
@@ -73,7 +71,7 @@ const About = () => {
 
         <Footer/>
 
-    </div>
+    </>
 
   );
 

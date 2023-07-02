@@ -2,7 +2,9 @@ import React from 'react';
 
 import { Link } from "react-router-dom";
 
-const MainNav = ({ title, src }) => {
+import MainLogo from '../assets/img/dila_logo.png';
+
+const MainNav = ({ title }) => {
 
   return (
     
@@ -11,7 +13,7 @@ const MainNav = ({ title, src }) => {
 
         {/* Custom logo */}
         <a className="navbar-brand" href="/">
-          <img src={src} alt="Dila Logo" width="40" />
+          <img src={MainLogo} alt="Dila Logo" width="40" />
         </a>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -22,19 +24,19 @@ const MainNav = ({ title, src }) => {
         <div className="collapse navbar-collapse navbar-center flex-grow-0" id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className={`nav-item ${title === "Home" ? 'active' : ''}`}>
-              <a className={`nav-link`}><Link to="/">Home</Link></a>
+              <Link className={`nav-link ${title === "Home" ? 'active' : ''}`} to="/">Home</Link>
             </li>
             <li className={`nav-item ${title === "About Me" ? 'active' : ''}`}>
-              <a className={`nav-link`}><Link to="/about">About Me</Link></a>
+              <Link className={`nav-link ${title === "About Me" ? 'active' : ''}`} to="/about">About Me</Link>
             </li>
             <li className={`nav-item ${title === "Projects" ? 'active' : ''}`}>
-              <a className={`nav-link`}><Link to="/projects">Projects</Link></a>
+              <Link className={`nav-link ${title === "Projects" ? 'active' : ''}`} to="/projects">Projects</Link>
             </li>
             <li className={`nav-item ${title === "Services" ? 'active' : ''}`}>
-              <a className={`nav-link`}><Link to="/services">Services</Link></a>
+              <Link className={`nav-link ${title === "Services" ? 'active' : ''}`} to="/services">Services</Link>
             </li>
             <li className={`nav-item ${title === "Contact" ? 'active' : ''}`}>
-              <a className={`nav-link`}><Link to="/contact">Contact</Link></a>
+              <Link className={`nav-link ${title === "Contact" ? 'active' : ''}`} to="/contact">Contact</Link>
             </li>
           </ul>
         </div>

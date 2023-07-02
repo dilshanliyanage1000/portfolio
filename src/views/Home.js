@@ -6,17 +6,15 @@ import BottomNav from '../partials/BottomNav';
 
 import UIUXLogo from '../assets/img/ui_logo_new.png';
 
-import MainLogo from '../assets/img/dila_logo.png';
-
 const Home = () => {
 
-  const param1 = 'Home';
+  const param1 = "Home";
 
   return (
 
-    <div>
+    <>
       
-      <MainNav title={param1} src={MainLogo}/>
+      <MainNav title={param1} />
 
         <main className="container" style={{marginTop: "6rem"}}>
 
@@ -75,7 +73,7 @@ const Home = () => {
 
       <Footer/>
 
-    </div>
+    </>
 
   );
   

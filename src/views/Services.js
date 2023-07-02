@@ -6,8 +6,6 @@ import Footer from '../partials/Footer';
 
 import BottomNav from '../partials/BottomNav';
 
-import MainLogo from '../assets/img/dila_logo.png';
-
 import HTMLCSSLogo from "../assets/img/htmlcss.png";
 
 import UIUXLogo from "../assets/img/uiux.png";
@@ -17,13 +15,13 @@ import AndroidLogo from "../assets/img/android.png";
 
 const Services = () => {
 
-    const param1 = 'Services';
+    const param1 = "Services";
 
   return (
 
-    <div>
+    <>
 
-        <MainNav title={param1} src={MainLogo}/>
+        <MainNav title={param1} />
 
         <main className="container" style={{ marginTop: '6rem', marginBottom: '3rem' }}>
 
@@ -99,7 +97,7 @@ const Services = () => {
 
         <Footer/>
 
-    </div>
+    </>
 
   );
 

@@ -6,8 +6,6 @@ import Footer from '../partials/Footer';
 
 import BottomNav from '../partials/BottomNav';
 
-import MainLogo from '../assets/img/dila_logo.png';
-
 import UdayaLogo from '../assets/img/udaya_logo.png';
 
 import SeaSideLodgeLogo from "../assets/img/seasidelodge.png";
@@ -21,13 +19,13 @@ import S3Logo from "../assets/img/3S.png";
 
 const Projects = () => {
 
-    const param1 = 'Projects';
+    const param1 = "Projects";
 
     return (
     
-        <div>
+        <>
 
-            <MainNav title={param1} src={MainLogo}/>
+            <MainNav title={param1} />
             
                 <main className="container" style={{ marginTop: '6rem', marginBottom: '4rem' }}>
 
@@ -195,7 +193,7 @@ const Projects = () => {
 
             <Footer/>
 
-        </div>
+        </>
 
     );
 

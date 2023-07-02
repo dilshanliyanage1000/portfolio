@@ -6,17 +6,15 @@ import Footer from '../partials/Footer';
 
 import BottomNav from '../partials/BottomNav';
 
-import MainLogo from '../assets/img/dila_logo.png';
-
 const Contact = () => {
 
-  const param1 = 'Contact';
+  const param1 = "Contact";
 
     return (
 
-      <div>
+      <>
 
-        <MainNav title={param1} src={MainLogo}/>
+        <MainNav title={param1} />
 
           <main className="container" style={{ marginTop: '6rem', marginBottom: '2rem' }}>
 
@@ -75,7 +73,7 @@ const Contact = () => {
 
         <Footer/>
 
-      </div>
+      </>
       
     );
 
