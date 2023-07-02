@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.41514654.js",
+    "main.js": "/portfolio/static/js/main.a33efeb7.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/me.png": "/portfolio/static/media/me.ac713642e9f317845908.png",
     "static/media/seasidelodge.png": "/portfolio/static/media/seasidelodge.a2f1a995e3ef030e1599.png",
@@ -15,10 +15,10 @@
     "static/media/htmlcss.png": "/portfolio/static/media/htmlcss.a148fd1ec3ed46f1dd79.png",
     "static/media/dila_logo.png": "/portfolio/static/media/dila_logo.cc329f9ad82f9f17aa4e.png",
     "index.html": "/portfolio/index.html",
-    "main.41514654.js.map": "/portfolio/static/js/main.41514654.js.map",
+    "main.a33efeb7.js.map": "/portfolio/static/js/main.a33efeb7.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.41514654.js"
+    "static/js/main.a33efeb7.js"
   ]
 }
