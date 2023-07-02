@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import Home from './Home';
 
@@ -12,20 +12,37 @@ import Projects from './Projects';
 
 import Services from './Services';
 
-function App() {
+const App = () => {
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/portfolio/" element={<Home />} />
-        <Route path="/portfolio/about" element={<About />} />
-        <Route path="/portfolio/contact" element={<Contact />} />
-        <Route path="/portfolio/projects" element={<Projects />} />
-        <Route path="/portfolio/services" element={<Services />} />
-      </Routes>
-    </Router>
+
+   <Switch>
+
+      <Route exact path='/'>
+        <Home/>
+      </Route>
+
+      <Route path='/about'>
+        <About/>
+      </Route>
+
+      <Route path='/projects'>
+        <Projects/>
+      </Route>
+
+      <Route path='/services'>
+        <Services/>
+      </Route>
+
+      <Route path='/contact'>
+        <Contact/>
+      </Route>
+
+   </Switch>
+   
+
   );
-  
+
 }
 
 export default App;
