@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Home from './Home';
 
 import About from './About';
@@ -12,43 +14,16 @@ import Services from './Services';
 
 function App() {
 
-  let Component;
-
-  switch (window.location.pathname) {
-
-    case "/portfolio":
-      Component = Home
-      break
-
-    case "/portfolio/about":
-      Component = About
-      break
-
-    case "/portfolio/projects":
-      Component = Projects
-      break
-
-    case "/portfolio/services":
-      Component = Services
-      break
-      
-    case "/portfolio/contact":
-      Component = Contact
-      break
-
-    default:
-      Component = Home
-      break
-  }
-
   return (
-
-    <div>
-
-      <Component />
-
-    </div>
-
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
+    </Router>
   );
   
 }
