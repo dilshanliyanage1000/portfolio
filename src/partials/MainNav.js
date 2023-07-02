@@ -20,19 +20,19 @@ const MainNav = ({ title, src }) => {
         <div className="collapse navbar-collapse navbar-center flex-grow-0" id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className={`nav-item ${title === "Home" ? 'active' : ''}`}>
-              <a className={`nav-link`} href="/">Home</a>
+              <a className={`nav-link`} href="/portfolio/">Home</a>
             </li>
             <li className={`nav-item ${title === "About Me" ? 'active' : ''}`}>
-              <a className={`nav-link`} href="/about">About Me</a>
+              <a className={`nav-link`} href="/portfolio/about">About Me</a>
             </li>
             <li className={`nav-item ${title === "Projects" ? 'active' : ''}`}>
-              <a className={`nav-link`} href="/projects">Projects</a>
+              <a className={`nav-link`} href="/portfolio/projects">Projects</a>
             </li>
             <li className={`nav-item ${title === "Services" ? 'active' : ''}`}>
-              <a className={`nav-link`} href="/services">Services</a>
+              <a className={`nav-link`} href="/portfolio/services">Services</a>
             </li>
             <li className={`nav-item ${title === "Contact" ? 'active' : ''}`}>
-              <a className={`nav-link`} href="/contact">Contact</a>
+              <a className={`nav-link`} href="/portfolio/contact">Contact</a>
             </li>
           </ul>
         </div>
