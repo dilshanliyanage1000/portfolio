@@ -10,13 +10,15 @@ import MyLogo from '../assets/img/me.png';
 
 import MainLogo from '../assets/img/dila_logo.png';
 
+import DownloadFile from '../contents/Dilshan_Liyanage_Resume.pdf';
+
 const About = () => {
     
     const param1 = 'About';
 
     const downloadResume = () => {
         const link = document.createElement('a');
-        link.href = '../content/Dilshan_Liyanage_Resume.pdf';
+        link.href = DownloadFile;
         link.download = 'Dilshan_Liyanage_Resume.pdf';
         link.click();
     };
