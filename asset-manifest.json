@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.f8db0a15.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/me.png": "/portfolio/static/media/me.ac713642e9f317845908.png",
+    "static/media/seasidelodge.png": "/portfolio/static/media/seasidelodge.a2f1a995e3ef030e1599.png",
+    "static/media/3S.png": "/portfolio/static/media/3S.ecb08a6523cf490e6951.png",
+    "static/media/udaya_logo.png": "/portfolio/static/media/udaya_logo.60caec3beec986952e5f.png",
+    "static/media/wecare.png": "/portfolio/static/media/wecare.02154cbc17f0d1bafe13.png",
+    "static/media/ui_logo_new.png": "/portfolio/static/media/ui_logo_new.10371cea3b33d5fc469e.png",
+    "static/media/project_fms.png": "/portfolio/static/media/project_fms.0ef622a8c602adba8495.png",
+    "static/media/Dilshan_Liyanage_Resume.pdf": "/portfolio/static/media/Dilshan_Liyanage_Resume.6294674e2460a00c9955.pdf",
+    "static/media/android.png": "/portfolio/static/media/android.a746d8edd279a88bfa15.png",
+    "static/media/uiux.png": "/portfolio/static/media/uiux.2739759ba1e9e04d71db.png",
+    "static/media/htmlcss.png": "/portfolio/static/media/htmlcss.a148fd1ec3ed46f1dd79.png",
+    "static/media/dila_logo.png": "/portfolio/static/media/dila_logo.cc329f9ad82f9f17aa4e.png",
+    "index.html": "/portfolio/index.html",
+    "main.f8db0a15.js.map": "/portfolio/static/js/main.f8db0a15.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.f8db0a15.js"
+  ]
+}
