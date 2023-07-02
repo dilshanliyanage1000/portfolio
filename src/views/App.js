@@ -16,23 +16,23 @@ function App() {
 
   switch (window.location.pathname) {
 
-    case "/":
+    case "/portfolio":
       Component = Home
       break
 
-    case "/about":
+    case "/portfolio/about":
       Component = About
       break
 
-    case "/projects":
+    case "/portfolio/projects":
       Component = Projects
       break
 
-    case "/services":
+    case "/portfolio/services":
       Component = Services
       break
       
-    case "/contact":
+    case "/portfolio/contact":
       Component = Contact
       break
 
