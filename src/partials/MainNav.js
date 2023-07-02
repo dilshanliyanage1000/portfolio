@@ -12,9 +12,9 @@ const MainNav = ({ title }) => {
       <div className="container-fluid justify-content-md-center">
 
         {/* Custom logo */}
-        <a className="navbar-brand" href="/">
+        <Link className={`navbar-brand`} to="/">
           <img src={MainLogo} alt="Dila Logo" width="40" />
-        </a>
+        </Link>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
