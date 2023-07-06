@@ -6,6 +6,8 @@ import BottomNav from '../partials/BottomNav';
 
 import UIUXLogo from '../assets/img/ui_logo_new.png';
 
+import { Link } from "react-router-dom";
+
 const Home = () => {
 
   const param1 = "Home";
@@ -29,29 +31,31 @@ const Home = () => {
                 <h3 className="display-6 mt-5" style={{fontSize: "30px"}}>An Enthusiastic Web Developer and UI/UX Designer</h3>
 
                 <h3 className="display-6 mb-4" style={{fontSize: "25px", marginTop: "100px"}}>Feel free to know more about me by clicking these sections...</h3>
-                <a href="/about" style={{textDecoration: "none"}}>
+
+                <Link style={{textDecoration: "none"}} to="/about" >
                   <button type="button" className="btn index-link">
                     <h3 className="display-6" style={{fontSize: "20px"}}>About Me</h3>
                   </button>
-                </a>
+                </Link>
 
-                <a href="/projects" style={{textDecoration: "none"}}>
+                
+                <Link style={{textDecoration: "none"}} to="/projects" >
                   <button type="button" className="btn index-link" style={{marginLeft: "10px"}}>
                     <h3 className="display-6" style={{fontSize: "20px"}}>Projects</h3>
                   </button>
-                </a>
-
-                <a href="/services" style={{textDecoration: "none"}}>
+                </Link>
+                
+                <Link style={{textDecoration: "none"}} to="/services" >
                   <button type="button" className="btn index-link" style={{marginLeft: "10px"}}>
                     <h3 className="display-6" style={{fontSize: "20px"}}>Services</h3>
                   </button>
-                </a>
+                </Link>
 
-                <a href="/contact" style={{textDecoration: "none"}}>
+                <Link style={{textDecoration: "none"}} to="/contact" >
                   <button type="button" className="btn index-link" style={{marginLeft: "10px"}}>
                     <h3 className="display-6" style={{fontSize: "20px"}}>Contact</h3>
                   </button>
-                </a>
+                </Link>
 
               </div>
               
