@@ -12,6 +12,8 @@ import UIUXLogo from "../assets/img/uiux.png";
 
 import AndroidLogo from "../assets/img/android.png";
 
+import GraphicDesignLogo from "../assets/img/graphic.png";
+
 
 const Services = () => {
 
@@ -27,40 +29,42 @@ const Services = () => {
 
             <div className="jumbotron">
 
-                <h1 className="display-5 text-center" style={{ fontSize: '40px' }}>My Services include....</h1>
+                <h1 className="display-5 text-center" style={{ fontSize: '3rem' }}>My Services include....</h1>
 
                 <div className="mt-5">
 
-                    <div className="row" style={{ padding: '5px' }}>
+                    <div className="row">
 
-                        {/* Web Development */}
-                        <div className="col-md-4 text-center">
+                        <div className="col-md-6">
 
-                            <img src={HTMLCSSLogo} alt="HTML-CSS logo" style={{ height: '150px' }} />
+                            <div className="d-flex align-items-center justify-content-center">
 
-                            <br />
-
-                            <h2 className="display-4 mt-3" style={{ fontSize: '35px' }}>Web Development</h2><br />
-
-                            <p className="display-5" style={{ fontSize: '18px' }}>
-                                I specialize in creating attractive and functional websites using HTML and CSS. I combine my technical
+                                <img src={HTMLCSSLogo} alt="HTML-CSS logo" style={{ width: '5rem' }} />
+                                
+                                <h2 className="display-4" style={{ fontSize: '30px', marginLeft: '2rem' }}>Web Development</h2>
+                                
+                            </div>
+                                
+                            <p className="display-5 mt-3" style={{ fontSize: '18px', padding: '1rem', textAlign: 'center' }}>
+                                I specialize in creating attractive and functional websites using HTML and Bootstrap, combining my technical
                                 skills with design principles to bring your unique vision to life. I focus on building websites that work
-                                well on different devices and browsers, ensuring a great user experience. With attention to detail and clean
-                                code, I create captivating web presences.
+                                well on different devices and browsers, ensuring a great user experience while creating captivating web presences
+                                with attention to detail and clean code.
                             </p>
 
                         </div>
 
-                        {/* UI/UX Design */}
-                        <div className="col-md-4 text-center">
+                        <div className="col-md-6">
 
-                            <img src={UIUXLogo} alt="UI-UX logo" style={{ height: '150px' }} />
+                            <div className="d-flex align-items-center justify-content-center">
 
-                            <br />
-
-                            <h2 className="display-4 mt-3" style={{ fontSize: '35px' }}>UI/UX Designs</h2><br />
-
-                            <p className="display-5" style={{ fontSize: '18px' }}>
+                                <img src={UIUXLogo} alt="UI-UX logo" style={{ width: '5rem' }} />
+                                
+                                <h2 className="display-4" style={{ fontSize: '30px', marginLeft: '2rem' }}>UI/UX Designs</h2><br />
+                                
+                            </div>
+                                
+                            <p className="display-5 mt-3" style={{ fontSize: '18px', padding: '1rem', textAlign: 'center'}}>
                                 I am dedicated to designing interfaces that are easy to use and visually appealing. By incorporating
                                 creativity, research, and understanding user behavior, I create interfaces that engage and delight users. My
                                 goal is to optimize the design for driving conversions and providing an exceptional user experience.
@@ -68,19 +72,42 @@ const Services = () => {
 
                         </div>
 
-                        {/* Android Development */}
-                        <div className="col-md-4 text-center">
+                    </div>
 
-                            <img src={AndroidLogo} alt="Android logo" style={{ height: '150px' }} />
+                    <div className="row mt-4">
 
-                            <br />
+                        <div className="col-md-6">
 
-                            <h2 className="display-4 mt-3" style={{ fontSize: '35px' }}>Android Development</h2><br />
+                            <div className="d-flex align-items-center justify-content-center">
 
-                            <p className="display-5" style={{ fontSize: '18px' }}>
+                                <img src={AndroidLogo} alt="UI-UX logo" style={{ width: '5rem' }} />
+                                
+                                <h2 className="display-4" style={{ fontSize: '30px', marginLeft: '2rem' }}>Android Development</h2><br />
+                                
+                            </div>
+                                
+                            <p className="display-5 mt-3" style={{ fontSize: '18px', padding: '1rem', textAlign: 'center'}}>
                                 I develop high-quality Android applications tailored to your specific needs. I build
                                 user-friendly and robust applications that perform well. By building unique apps, you can reach a wider
                                 audience and stay ahead in the ever-evolving mobile landscape.
+                            </p>
+
+                        </div>
+
+                        <div className="col-md-6">
+
+                            <div className="d-flex align-items-center justify-content-center">
+
+                                <img src={GraphicDesignLogo} alt="UI-UX logo" style={{ width: '5rem' }} />
+                                
+                                <h2 className="display-4" style={{ fontSize: '30px', marginLeft: '2rem' }}>Graphic Designing</h2><br />
+                                
+                            </div>
+                                
+                            <p className="display-5 mt-3" style={{ fontSize: '18px', padding: '1rem', textAlign: 'center'}}>
+                                As a passionate and skilled graphic designer, I take great pride in bringing
+                                your ideas to life through visually stunning and impactful designs. Whether you need posters for events, logos 
+                                for your brand, or expertly edited photos, I am dedicated to delivering exceptional results. 
                             </p>
 
                         </div>

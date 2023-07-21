@@ -26,34 +26,34 @@ const Home = () => {
                 <h1 className="display-4">Hello!</h1>
 
                 <h3 className="display-6 mt-5">I'm Dilshan Liyanage</h3>
-                <h3 className="display-6" style={{fontSize: "25px"}}>You can call me Dila</h3>
+                <h3 className="display-6" style={{fontSize: "1.5rem"}}>You can call me Dila</h3>
 
-                <h3 className="display-6 mt-5" style={{fontSize: "30px"}}>An Enthusiastic Web Developer and UI/UX Designer</h3>
+                <h3 className="display-6 mt-5" style={{fontSize: "30px"}}>An Enthusiastic Web Developer, UI/UX and Graphic Designer</h3>
 
-                <h3 className="display-6 mb-4" style={{fontSize: "25px", marginTop: "100px"}}>Feel free to know more about me by clicking these sections...</h3>
+                <h3 className="display-6 mb-4" style={{fontSize: "1.5rem", marginTop: "90px"}}>Feel free to know more about me by clicking these sections...</h3>
 
                 <Link style={{textDecoration: "none"}} to="/about" >
                   <button type="button" className="btn index-link">
-                    <h3 className="display-6" style={{fontSize: "20px"}}>About Me</h3>
+                    <h3 className="display-6" style={{fontSize: "18px"}}>About Me</h3>
                   </button>
                 </Link>
 
                 
                 <Link style={{textDecoration: "none"}} to="/projects" >
                   <button type="button" className="btn index-link" style={{marginLeft: "10px"}}>
-                    <h3 className="display-6" style={{fontSize: "20px"}}>Projects</h3>
+                    <h3 className="display-6" style={{fontSize: "18px"}}>Projects</h3>
                   </button>
                 </Link>
                 
                 <Link style={{textDecoration: "none"}} to="/services" >
                   <button type="button" className="btn index-link" style={{marginLeft: "10px"}}>
-                    <h3 className="display-6" style={{fontSize: "20px"}}>Services</h3>
+                    <h3 className="display-6" style={{fontSize: "18px"}}>Services</h3>
                   </button>
                 </Link>
 
                 <Link style={{textDecoration: "none"}} to="/contact" >
                   <button type="button" className="btn index-link" style={{marginLeft: "10px"}}>
-                    <h3 className="display-6" style={{fontSize: "20px"}}>Contact</h3>
+                    <h3 className="display-6" style={{fontSize: "18px"}}>Contact</h3>
                   </button>
                 </Link>
 
@@ -63,7 +63,7 @@ const Home = () => {
                 <img src={UIUXLogo} alt="UI-UX Logo" style={{width: "70%"}} />
 
                 <h4 className="display-6" style={{fontSize: "25px", marginTop: "100px"}}>
-                  <i>"Empowering digital experiences through innovative design and seamless functionality."</i>
+                  <i>"Empowering digital experiences through innovative design and seamless functionality..."</i>
                 </h4>
               </div>
 

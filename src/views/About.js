@@ -6,9 +6,11 @@ import Footer from '../partials/Footer';
 
 import BottomNav from '../partials/BottomNav';
 
-import MyLogo from '../assets/img/me.png';
+// import MyLogo from '../assets/img/me.png';
 
 import DownloadFile from '../contents/Dilshan_Liyanage_Resume.pdf';
+
+import MyCarousel from '../partials/MyCarousel';
 
 const About = () => {
     
@@ -33,17 +35,19 @@ const About = () => {
 
                 <div className="row">
 
-                    <div className="col-md-3">
-                        <img className="mt-5" src={MyLogo} alt="UI-UX Logo" style={{ width: '100%' }} />
+                    <div className="col-md-4 mt-4">
+                        {/* <img className="" src={MyLogo} alt="UI-UX Logo" style={{ width: '100%' }} /> */}
+
+                        <MyCarousel />
                     </div>
 
-                    <div className="col-md-9 text-end">
+                    <div className="col-md-8 text-end">
 
                         <h1 className="display-4">Welcome to my Portfolio!</h1>
 
-                        <h3 className="display-6 mt-4">My name is Attidiye Dilshan Nayanamadhu Liyanage.</h3>
+                        <h3 className="display-6 mt-4" style={{ fontSize: '2rem' }}>My name is Attidiye Dilshan Nayanamadhu Liyanage.</h3>
 
-                        <h3 className="display-6 mt-5" style={{ fontSize: '25px' }}>
+                        <h3 className="display-6 mt-5" style={{ fontSize: '1.5rem' }}>
                             I'm a passionate Web Developer and UI/UX Designer with a keen eye for detail. I possess a love for creating
                             user-centered experiences and strive to craft visually appealing and functional websites. Whether it's bringing
                             innovative designs to life or building robust web applications, I'm dedicated to delivering exceptional results.

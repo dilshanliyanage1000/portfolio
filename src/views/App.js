@@ -12,6 +12,8 @@ import Projects from './Projects';
 
 import Services from './Services';
 
+import Gallery from './Gallery';
+
 const App = () => {
 
   return (
@@ -23,6 +25,8 @@ const App = () => {
       <Route path='/about' element={<About/>}> </Route>
 
       <Route path='/projects' element = {<Projects/>}> </Route>
+
+      <Route path='/gallery' element = {<Gallery/>}> </Route>
 
       <Route path='/services' element = {<Services/>}> </Route>
 
