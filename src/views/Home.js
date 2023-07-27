@@ -38,7 +38,7 @@ const Home = () => {
 
                 <div className='row align-items-left justify-content-left'>
 
-                  <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
+                  <div className='col-md-auto'  style={{padding: '5px', textAlign: "center"  }} >
                     <Link style={{textDecoration: "none"}} to="/about" >
                       <button type="button" className="btn index-link">
                         <h3 className="display-6" style={{fontSize: "18px"}}>About Me</h3>
@@ -46,7 +46,7 @@ const Home = () => {
                     </Link>
                   </div>
 
-                  <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
+                  <div className='col-md-auto'  style={{padding: '5px', textAlign: "center"  }} >
                     <Link style={{textDecoration: "none"}} to="/projects" >
                       <button type="button" className="btn index-link">
                         <h3 className="display-6" style={{fontSize: "18px"}}>Projects</h3>
@@ -54,7 +54,19 @@ const Home = () => {
                     </Link>
                   </div>
 
-                  <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
+                  <div className='col-md-auto'  style={{padding: '5px', textAlign: "center"  }} >
+
+                    <Link style={{textDecoration: "none"}} to="/gallery" >
+
+                      <button type="button" className="btn index-link">
+                        <h3 className="display-6" style={{fontSize: "18px"}}>Gallery</h3>
+                      </button>
+                      
+                    </Link>
+
+                  </div>
+
+                  <div className='col-md-auto'  style={{padding: '5px', textAlign: "center"  }} >
                     <Link style={{textDecoration: "none"}} to="/services" >
                       <button type="button" className="btn index-link">
                         <h3 className="display-6" style={{fontSize: "18px"}}>Services</h3>
@@ -62,7 +74,7 @@ const Home = () => {
                     </Link>
                   </div>
 
-                  <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
+                  <div className='col-md-auto'  style={{padding: '5px', textAlign: "center"  }} >
 
                     <Link style={{textDecoration: "none"}} to="/contact" >
 

@@ -35,10 +35,10 @@ const About = () => {
 
                 <div className="row">
 
-                    <div className="col-md-4 mt-4">
-                        {/* <img className="" src={MyLogo} alt="UI-UX Logo" style={{ width: '100%' }} /> */}
+                    <div className="col-md-4" style={{padding: "20px"}}>
 
-                        <MyCarousel />
+                        <MyCarousel className="mt-4" />
+
                     </div>
 
                     <div className="col-md-8 text-end">

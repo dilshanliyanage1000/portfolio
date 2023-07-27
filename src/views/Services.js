@@ -31,7 +31,7 @@ const Services = () => {
 
                 <h1 className="display-5 text-center" style={{ fontSize: '3rem' }}>My Services include....</h1>
 
-                <div className="mt-5">
+                <div className="mt-4">
 
                     <div className="row">
 
@@ -39,7 +39,7 @@ const Services = () => {
 
                             <div className="d-flex align-items-center justify-content-center">
 
-                                <img src={HTMLCSSLogo} alt="HTML-CSS logo" style={{ width: '5rem' }} />
+                                <img src={HTMLCSSLogo} alt="HTML-CSS logo" style={{ width: '6rem' }} />
                                 
                                 <h2 className="display-4" style={{ fontSize: '30px', marginLeft: '2rem' }}>Web Development</h2>
                                 
@@ -58,7 +58,7 @@ const Services = () => {
 
                             <div className="d-flex align-items-center justify-content-center">
 
-                                <img src={UIUXLogo} alt="UI-UX logo" style={{ width: '5rem' }} />
+                                <img src={UIUXLogo} alt="UI-UX logo" style={{ width: '6rem' }} />
                                 
                                 <h2 className="display-4" style={{ fontSize: '30px', marginLeft: '2rem' }}>UI/UX Designs</h2><br />
                                 
@@ -80,7 +80,7 @@ const Services = () => {
 
                             <div className="d-flex align-items-center justify-content-center">
 
-                                <img src={AndroidLogo} alt="UI-UX logo" style={{ width: '5rem' }} />
+                                <img src={AndroidLogo} alt="UI-UX logo" style={{ width: '6rem' }} />
                                 
                                 <h2 className="display-4" style={{ fontSize: '30px', marginLeft: '2rem' }}>Android Development</h2><br />
                                 
@@ -98,7 +98,7 @@ const Services = () => {
 
                             <div className="d-flex align-items-center justify-content-center">
 
-                                <img src={GraphicDesignLogo} alt="UI-UX logo" style={{ width: '5rem' }} />
+                                <img src={GraphicDesignLogo} alt="UI-UX logo" style={{ width: '6rem' }} />
                                 
                                 <h2 className="display-4" style={{ fontSize: '30px', marginLeft: '2rem' }}>Graphic Designing</h2><br />
                                 
