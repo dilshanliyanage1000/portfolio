@@ -12,7 +12,7 @@ import KandyOldImage from "../assets/img/color_grading/img.jpg";
 
 import KandyNewImage from "../assets/img/color_grading/nfs heritage.png";
 
-import SupulveeOne from "../assets/img/supulvee/001.png";
+import SupulveeOne from "../assets/img/supulvee/006.png";
 
 import SupulveeTwo from "../assets/img/supulvee/002.png";
 
@@ -38,18 +38,29 @@ import DayaMama from "../assets/img/instagram/Daya mama.png";
 
 import HashiVintage from "../assets/img/instagram/Hashi Vintage.png";
 
-import ishaniVintage from "../assets/img/instagram/Ishani.png";
+import IshaniVintage from "../assets/img/instagram/Ishani.png";
 
-import lali from "../assets/img/instagram/lali.jpg";
+import soundpeats from "../assets/img/instagram/soundpeats.png";
 
-import dianBW from "../assets/img/instagram/Dian b&w.jpg";
+import lali from "../assets/img/instagram/lali.png";
 
-import sajeeThree from "../assets/img/doodle/sajeethree.jpg";
+import dianBW from "../assets/img/instagram/Dian b&w.png";
+
+import sajeeThree from "../assets/img/doodle/sajeethree.png";
 
 import DianRetro from "../assets/img/instagram/Dian Retro (Airbus).png";
 
+import DianRetroTwo from "../assets/img/instagram/Dian Retro (Cockpit).png";
+
 import Sayu from "../assets/img/doodle/sayu.png";
 
+import CanadianKomlaLogo from "../assets/img/logos/canadiankomla.png";
+
+import CCSAITamilOne from "../assets/img/logos/ccsai-tamil-one.png";
+
+import CCSAITamilTwo from "../assets/img/logos/ccsai-tamil-two.png";
+
+import SimplyOrganicLogo from "../assets/img/logos/simplyorganic.png";
 
 const Gallery = () => {
 
@@ -69,29 +80,49 @@ const Gallery = () => {
 
                         <div className="text-center mt-4">
 
-                            <Link style={{textDecoration: "none"}} to="colorgrading" smooth={true} duration={500} offset={-100} >
-                                <button type="button" className="btn index-link" style={{width: "10rem"}}>
-                                    <h3 className="display-6" style={{fontSize: "18px"}}>Color Grading</h3>
-                                </button>
-                            </Link>
+                            <div className='row align-items-center justify-content-center'>
 
-                            <Link style={{textDecoration: "none"}} to="business_posts" smooth={true} duration={500} offset={-100} >
-                                <button type="button" className="btn index-link" style={{width: "10rem", marginLeft: '1rem' }}>
-                                    <h3 className="display-6" style={{fontSize: "18px"}}>Business Posts</h3>
-                                </button>
-                            </Link>
+                                <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
+                                    <Link style={{textDecoration: "none"}} to="colorgrading" smooth={true} duration={500} offset={-100} >
+                                        <button type="button" className="btn index-link" style={{width: "10rem"}}>
+                                            <h3 className="display-6" style={{fontSize: "18px"}}>Color Grading</h3>
+                                        </button>
+                                    </Link>
+                                </div>
 
-                            <Link style={{textDecoration: "none"}} to="doodle" smooth={true} duration={500} offset={-100} >
-                                <button type="button" className="btn index-link" style={{width: "10rem", marginLeft: '1rem' }}>
-                                    <h3 className="display-6" style={{fontSize: "18px"}}>Doodles</h3>
-                                </button>
-                            </Link>
-                            
-                            <Link style={{textDecoration: "none"}} to="insta_posts" smooth={true} duration={500} offset={-100} >
-                                <button type="button" className="btn index-link" style={{width: "10rem", marginLeft: '1rem' }}>
-                                    <h3 className="display-6" style={{fontSize: "18px"}}>Instagram Posts</h3>
-                                </button>
-                            </Link>
+                                <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
+                                    <Link style={{textDecoration: "none"}} to="business_posts" smooth={true} duration={500} offset={-100} >
+                                        <button type="button" className="btn index-link" style={{width: "10rem"}}>
+                                            <h3 className="display-6" style={{fontSize: "18px"}}>Business Posts</h3>
+                                        </button>
+                                    </Link>
+                                </div>
+
+                                <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
+                                    <Link style={{textDecoration: "none"}} to="doodle" smooth={true} duration={500} offset={-100} >
+                                        <button type="button" className="btn index-link" style={{width: "10rem"}}>
+                                            <h3 className="display-6" style={{fontSize: "18px"}}>Doodles</h3>
+                                        </button>
+                                    </Link>
+                                </div>
+
+                                <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
+                                    <Link style={{textDecoration: "none"}} to="logo" smooth={true} duration={500} offset={-100} >
+                                        <button type="button" className="btn index-link" style={{width: "10rem"}}>
+                                            <h3 className="display-6" style={{fontSize: "18px"}}>Logos</h3>
+                                        </button>
+                                    </Link>
+                                </div>
+
+                                <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
+                                    <Link style={{textDecoration: "none"}} to="insta_posts" smooth={true} duration={500} offset={-100} >
+                                        <button type="button" className="btn index-link" style={{width: "10rem"}}>
+                                            <h3 className="display-6" style={{fontSize: "18px"}}>Instagram Posts</h3>
+                                        </button>
+                                    </Link>
+                                </div>
+
+                            </div>
 
                         </div>
 
@@ -117,21 +148,24 @@ const Gallery = () => {
                             </p>
 
                             <div className='container mt-4'>
+
                                 <div className='row align-items-center justify-content-center'>
-                                    <div className='col-md-auto'>
 
-                                    <p className="display-5 mt-3" style={{ fontSize: '18px', textAlign: 'center' }}>
-                                        Original (1975)
-                                    </p>
+                                    <div className='col-md-auto' style={{ textAlign: 'center', padding: "20px" }}>
 
-                                    <a href={KandyOldImage} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none' }}>
-                                        <img src={KandyOldImage} alt='SeaSide Logo' style={{ width: '25rem' }} />
-                                    </a>
+                                        <p className="display-5" style={{ fontSize: '18px', textAlign: 'center' }}>
+                                            Original (1975)
+                                        </p>
+
+                                        <a href={KandyOldImage} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none' }}>
+                                            <img src={KandyOldImage} alt='SeaSide Logo' style={{ width: '25rem' }} />
+                                        </a>
 
                                     </div>
-                                    <div className='col-md-auto'  style={{marginLeft: '2rem' }}>
 
-                                        <p className="display-5 mt-3" style={{ fontSize: '18px', textAlign: 'center' }}>
+                                    <div className='col-md-auto' style={{ textAlign: 'center', padding: "20px"  }}>
+
+                                        <p className="display-5" style={{ fontSize: '18px', textAlign: 'center' }}>
                                             Manipulated
                                         </p>
 
@@ -140,7 +174,9 @@ const Gallery = () => {
                                         </a>
 
                                     </div>
+
                                 </div>
+
                             </div>
 
                         </section>
@@ -162,44 +198,51 @@ const Gallery = () => {
                             </p>
 
                             <div className='container mt-4'>
+
                                 <div className='row align-items-center justify-content-center'>
 
-                                    <div className='col-md-auto'>
+                                    <div className='col-md-auto' style={{padding: '15px', textAlign: "center" }}>
 
                                         <a href={SupulveeTwo} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
                                             <img src={SupulveeTwo} alt={SupulveeTwo} style={{ width: '13rem' }} />
                                         </a>
 
                                     </div>
-                                    <div className='col-md-auto'  style={{marginLeft: '1rem' }}>
+
+                                    <div className='col-md-auto' style={{padding: '15px', textAlign: "center"  }}>
 
                                         <a href={SupulveeThree} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
                                             <img src={SupulveeThree} alt={SupulveeThree} style={{ width: '13rem' }} />
                                         </a>
 
                                     </div>
-                                    <div className='col-md-auto'  style={{marginLeft: '1rem' }}>
+
+                                    <div className='col-md-auto' style={{padding: '15px', textAlign: "center"  }}>
 
                                         <a href={SupulveeFour} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
                                             <img src={SupulveeFour} alt={SupulveeFour} style={{ width: '13rem' }} />
                                         </a>
 
                                     </div>
-                                    <div className='col-md-auto'  style={{marginLeft: '1rem' }}>
+
+                                    <div className='col-md-auto' style={{padding: '15px', textAlign: "center"  }}>
 
                                         <a href={SupulveeFive} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
                                             <img src={SupulveeFive} alt={SupulveeFive} style={{ width: '13rem' }} />
                                         </a>
 
                                     </div>
-                                    <div className='col-md-auto'  style={{marginLeft: '1rem' }}>
+
+                                    <div className='col-md-auto' style={{padding: '15px', textAlign: "center"  }}>
 
                                         <a href={SupulveeOne} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none' }}>
                                             <img src={SupulveeOne} alt={SupulveeOne} style={{ width: '13rem' }} />
                                         </a>
 
                                     </div>
+
                                 </div>
+
                             </div>
 
                         </section>
@@ -224,7 +267,7 @@ const Gallery = () => {
                             <div className='container mt-4'>
                                 <div className='row align-items-center justify-content-center'>
 
-                                    <div className='col-md-auto'>
+                                    <div className='col-md-auto' style={{padding: '15px', textAlign: "center"  }}>
 
                                         <p className="display-5 mt-3" style={{ fontSize: '18px', textAlign: 'center' }}>
                                             Bathiya (Unedited)
@@ -235,7 +278,7 @@ const Gallery = () => {
                                         </a>
 
                                     </div>
-                                    <div className='col-md-auto'  style={{marginLeft: '1rem' }}>
+                                    <div className='col-md-auto' style={{padding: '15px', textAlign: "center"  }}>
 
                                         <p className="display-5 mt-3" style={{ fontSize: '18px', textAlign: 'center' }}>
                                             Bathiya (Doodled)
@@ -246,7 +289,7 @@ const Gallery = () => {
                                         </a>
 
                                     </div>
-                                    <div className='col-md-auto'  style={{marginLeft: '5rem' }}>
+                                    <div className='col-md-auto' style={{padding: '15px', textAlign: "center"  }}>
 
                                         <p className="display-5 mt-3" style={{ fontSize: '18px', textAlign: 'center' }}>
                                             Santhush (Unedited)
@@ -257,9 +300,9 @@ const Gallery = () => {
                                         </a>
 
                                     </div>
-                                    <div className='col-md-auto'  style={{marginLeft: '1rem' }}>
+                                    <div className='col-md-auto' style={{padding: '15px', textAlign: "center"  }}>
 
-                                        <p className="display-5 mt-3" style={{ fontSize: '18px', textAlign: 'center' }}>
+                                        <p className="display-5 mt-3" style={{ fontSize: '18px' }}>
                                             Santhush (Doodled)
                                         </p>
 
@@ -273,9 +316,62 @@ const Gallery = () => {
 
                         </section>
 
+                        <section id="logo">
+
+                            <h2 className="display-4" style={{ fontSize: '30px', marginTop: '5rem' }}>Logos</h2>
+
+                            <hr className="border border-light border-1 opacity-75" width="100" />
+
+                            <p className="display-5 mt-4" style={{ fontSize: '18px', textAlign: 'justify' }}>
+
+                            My logo design process begins with a thorough understanding of the brand's identity, target audience, 
+                            and values. I believe that an exceptional logo should not only be visually striking but also communicate 
+                            the brand's core message effectively.
+
+                            </p>
+
+                            <div className='container mt-5'>
+
+                                <div className='row align-items-center justify-content-center'>
+
+                                    <div className='col-md-auto' style={{padding: '10px', textAlign: "center"  }}>
+
+                                        <a href={CanadianKomlaLogo} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
+                                            <img src={CanadianKomlaLogo} alt={CanadianKomlaLogo} style={{ width: '10rem' }} />
+                                        </a>
+
+                                    </div>
+                                    <div className='col-md-auto' style={{padding: '10px', textAlign: "center"  }}>
+
+                                        <a href={CCSAITamilOne} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
+                                            <img src={CCSAITamilOne} alt={CCSAITamilOne} style={{ width: '10rem' }} />
+                                        </a>
+
+                                    </div>
+                                    <div className='col-md-auto' style={{padding: '10px', textAlign: "center"  }}>
+
+                                        <a href={CCSAITamilTwo} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
+                                            <img src={CCSAITamilTwo} alt={CCSAITamilTwo} style={{ width: '10rem' }} />
+                                        </a>
+
+                                    </div>
+                                    <div className='col-md-auto' style={{padding: '10px', textAlign: "center"  }}>
+
+                                        <a href={SimplyOrganicLogo} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
+                                            <img src={SimplyOrganicLogo} alt={SimplyOrganicLogo} style={{ width: '10rem' }} />
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </section>
+
                         <section id="insta_posts">
 
-                            <h2 className="display-4" style={{ fontSize: '30px', marginTop: '5rem' }}>Instagram Posts</h2>
+                            <h2 className="display-4" style={{ fontSize: '30px', marginTop: '5rem' }}>Instagram & Product Posts</h2>
 
                             <hr className="border border-light border-1 opacity-75" width="100" />
 
@@ -289,87 +385,99 @@ const Gallery = () => {
 
                                 <div className='row align-items-center justify-content-center'>
 
-                                    <div className='col-md-auto'>
+                                    <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
 
                                         <a href={CJvintage} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
-                                            <img src={CJvintage} alt={CJvintage} style={{ width: '13rem' }} />
+                                            <img src={CJvintage} alt={CJvintage} style={{ width: '12rem' }} />
                                         </a>
 
                                     </div>
-                                    <div className='col-md-auto'  style={{marginLeft: '1rem' }}>
+
+                                    <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }}>
 
                                         <a href={CJmedia} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
-                                            <img src={CJmedia} alt={CJmedia} style={{ width: '13rem' }} />
+                                            <img src={CJmedia} alt={CJmedia} style={{ width: '12rem' }} />
                                         </a>
 
                                     </div>
-                                    <div className='col-md-auto'  style={{marginLeft: '1rem' }}>
+
+                                    <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }}>
 
                                         <a href={DayaMama} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
-                                            <img src={DayaMama} alt={DayaMama} style={{ width: '13rem' }} />
+                                            <img src={DayaMama} alt={DayaMama} style={{ width: '12rem' }} />
                                         </a>
 
                                     </div>
-                                    <div className='col-md-auto'  style={{marginLeft: '1rem' }}>
+
+                                    <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }}>
 
                                         <a href={HashiVintage} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
-                                            <img src={HashiVintage} alt={HashiVintage} style={{ width: '13rem' }} />
+                                            <img src={HashiVintage} alt={HashiVintage} style={{ width: '12rem' }} />
+                                        </a>
+
+                                    </div>
+                                    
+                                    
+                                    <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }}>
+
+                                        <a href={IshaniVintage} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
+                                            <img src={IshaniVintage} alt={IshaniVintage} style={{ width: '12rem' }} />
                                         </a>
 
                                     </div>
 
-                                    <div className='col-md-auto'  style={{marginLeft: '1rem' }}>
+                                    <div className='col-md-auto' style={{padding: '10px', textAlign: "center"  }}>
 
-                                        <a href={ishaniVintage} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
-                                            <img src={ishaniVintage} alt={ishaniVintage} style={{ width: '13rem' }} />
+                                        <a href={soundpeats} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
+                                            <img src={soundpeats} alt={soundpeats} style={{ width: '12rem' }} />
                                         </a>
 
                                     </div>
 
-                                </div>
-
-                            </div>
-
-                            <div className='container mt-5'>
-
-                                <div className='row align-items-center justify-content-center'>
-
-                                    <div className='col-md-auto'>
+                                    <div className='col-md-auto' style={{padding: '10px', textAlign: "center"  }}>
 
                                         <a href={lali} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
-                                            <img src={lali} alt={lali} style={{ width: '13rem' }} />
+                                            <img src={lali} alt={lali} style={{ width: '12rem' }} />
                                         </a>
 
                                     </div>
 
-                                    <div className='col-md-auto'  style={{marginLeft: '1rem' }}>
+                                    <div className='col-md-auto' style={{padding: '10px', textAlign: "center"  }}>
 
                                         <a href={dianBW} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
-                                            <img src={dianBW} alt={dianBW} style={{ width: '13rem' }} />
+                                            <img src={dianBW} alt={dianBW} style={{ width: '12rem' }} />
                                         </a>
 
                                     </div>
 
-                                    <div className='col-md-auto'  style={{marginLeft: '1rem' }}>
+                                    <div className='col-md-auto' style={{padding: '10px', textAlign: "center"  }}>
 
                                         <a href={sajeeThree} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
-                                            <img src={sajeeThree} alt={sajeeThree} style={{ width: '13rem' }} />
+                                            <img src={sajeeThree} alt={sajeeThree} style={{ width: '12rem' }} />
                                         </a>
 
                                     </div>
 
-                                    <div className='col-md-auto'  style={{marginLeft: '1rem' }}>
+                                    <div className='col-md-auto' style={{padding: '10px', textAlign: "center"  }}>
 
                                         <a href={DianRetro} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
-                                            <img src={DianRetro} alt={DianRetro} style={{ width: '13rem' }} />
+                                            <img src={DianRetro} alt={DianRetro} style={{ width: '12rem' }} />
                                         </a>
 
                                     </div>
 
-                                    <div className='col-md-auto'  style={{marginLeft: '1rem' }}>
+                                    <div className='col-md-auto' style={{padding: '10px', textAlign: "center"  }}>
+
+                                        <a href={DianRetroTwo} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
+                                            <img src={DianRetroTwo} alt={DianRetroTwo} style={{ width: '12rem' }} />
+                                        </a>
+
+                                    </div>
+
+                                    <div className='col-md-auto' style={{padding: '10px', textAlign: "center"  }}>
 
                                         <a href={Sayu} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
-                                            <img src={Sayu} alt={Sayu} style={{ width: '13rem' }} />
+                                            <img src={Sayu} alt={Sayu} style={{ width: '12rem' }} />
                                         </a>
 
                                     </div>
