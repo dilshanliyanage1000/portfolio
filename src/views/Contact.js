@@ -16,26 +16,45 @@ const Contact = () => {
 
         <MainNav title={param1} />
 
-          <main className="container" style={{ marginTop: '5rem', marginBottom: '3rem' }}>
+          <main className="container" style={{ marginTop: '6rem', marginBottom: '3rem' }}>
 
             <div className="jumbotron text-center">
 
-              <h1 className="display-5">Let's connect!</h1>
+              <h1 className="display-5 mb-3">Let's connect!</h1>
 
-              {/* Link to visit my LinkedIn profile */}
-              <p className="display-5 mt-3" style={{ fontSize: '20px' }}>
-                <a href="https://www.linkedin.com/in/dilaliyanage/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'white' }}>
-                  <i className="fa-brands fa-linkedin"></i> LinkedIn
-                </a>
+              <div className='row align-items-center justify-content-center display-5 mb-3' style={{ fontSize: '20px' }}>
 
-                <a href="https://github.com/dilshanliyanage1000/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'white', marginLeft: '30px' }}>
-                  <i className="fa-brands fa-github"></i> GitHub
-                </a>
+                <div className='col-md-auto'  style={{margin: '5px', textAlign: "center"  }} >
+                  <a href="mailto:aliyana4@my.centennialcollege.ca" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'white' }}>
+                    <i className="fa-solid fa-envelope-open"></i>&nbsp;&nbsp;Email
+                  </a>
+                </div>
 
-                <a href="mailto:aliyana4@my.centennialcollege.ca" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'white', marginLeft: '30px' }}>
-                  <i className="fa-solid fa-envelope-open"></i> Email
-                </a>
-              </p>
+                <div className='col-md-auto'  style={{margin: '5px', textAlign: "center"  }} >
+                    <a href="https://www.linkedin.com/in/dilaliyanage/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'white' }}>
+                      <i className="fa-brands fa-linkedin"></i>&nbsp;&nbsp;LinkedIn
+                    </a>
+                </div>
+
+                <div className='col-md-auto'  style={{margin: '5px', textAlign: "center"  }} >
+                  <a href="https://github.com/dilshanliyanage1000/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'white' }}>
+                    <i className="fa-brands fa-github"></i>&nbsp;&nbsp;GitHub
+                  </a>
+                </div>
+
+                <div className='col-md-auto'  style={{margin: '5px', textAlign: "center"  }} >
+                  <a href="https://www.instagram.com/just_dila/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'white' }}>
+                    <i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;Instagram
+                  </a>
+                </div>
+
+                <div className='col-md-auto'  style={{margin: '5px', textAlign: "center"  }} >
+                  <a href="https://www.tiktok.com/@slcanadiankolla" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'white' }}>
+                    <i class="fa-brands fa-tiktok"></i>&nbsp;&nbsp;TikTok
+                  </a>
+                </div>
+
+              </div>
 
               <p className="display-5" style={{ fontSize: '20px' }}>Please feel free to reach out to me by filling out this form, and I will get back to you as soon as possible!</p>
 
@@ -64,7 +83,7 @@ const Contact = () => {
 
                       <div className="mb-3" style={{ textAlign: 'start', width: '100%' }}>
                         <label htmlFor="message" className="form-label">Message</label>
-                        <textarea className="form-control" name="message" id="message" rows="2" ></textarea>
+                        <textarea className="form-control" name="message" id="message" rows="1" ></textarea>
                       </div>
 
                       <button type="button" className="btn btn-light">Connect!</button>
