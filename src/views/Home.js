@@ -1,10 +1,10 @@
-import MainNav from '../partials/MainNav';
+import React, { useEffect, useState } from 'react';
 
-import Footer from '../partials/Footer';
+import MainNav from '../partials/MainNav';
 
 import BottomNav from '../partials/BottomNav';
 
-import UIUXLogo from '../assets/img/ui_logo_new.png';
+import MyImage from '../assets/img/me_1.png';
 
 import { Link } from "react-router-dom";
 
@@ -12,113 +12,91 @@ const Home = () => {
 
   const param1 = "Home";
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
 
     <>
       
       <MainNav title={param1} />
 
-        <main className="container" style={{marginTop: "6rem"}}>
+      <main className="container" style={{marginTop: "5rem", marginBottom: "4rem", textAlign: windowWidth < 768 ? 'center' : 'left'}}>
 
-          <div className="jumbotron">
+        <div className="jumbotron">
 
-            <div className="row">
+          <div className="row">
+            
+            <div className="col-md-5 col-lg-5 text-center" style={{marginTop: "3rem"}}>
+                
+              <img src={MyImage} alt="UI-UX Logo" style={{width: "75%"}} />
 
-              <div className="col-md-7">
+            </div>
 
-                <h1 className="display-4">Hello!</h1>
+            <div className="col-md-7 col-lg-7" style={{marginTop: "3rem"}}>
 
-                <h3 className="display-6 mt-5">I'm Dilshan Liyanage</h3>
+              <h1 className="display-6" style={{fontSize: "30px"}}>Hey There! Welcome to my Portfolio!</h1>
 
-                <h3 className="display-6" style={{fontSize: "1.5rem"}}>You can call me Dila</h3>
+              <h3 className="display-5 mt-5 theme-color fw-medium">I'm Dilshan Liyanage</h3>
 
-                <h3 className="display-6 mt-5" style={{fontSize: "30px"}}>An Enthusiastic Web Developer, UI/UX and Graphic Designer</h3>
+              <h3 className="display-6" style={{fontSize: "1.5rem"}}>You can call me Dila</h3>
 
-                <h3 className="display-6 mb-4" style={{fontSize: "1.5rem", marginTop: "90px"}}>Feel free to know more about me by clicking these sections...</h3>
+              <h3 className="display-6 mt-5" style={{fontSize: "30px"}}>Web Developer | UI/UX and Graphic Designer</h3>
 
-                <div className='row align-items-left justify-content-left'>
+              <h4 className="display-6 mt-5" style={{fontSize: "20px"}}>
 
-                  <div className='col-md-auto'  style={{padding: '5px', textAlign: "center"  }} >
-                    <Link style={{textDecoration: "none"}} to="/about" >
-                      <button type="button" className="btn index-link">
-                        <h3 className="display-6" style={{fontSize: "18px"}}>About Me</h3>
-                      </button>
-                    </Link>
-                  </div>
+                <i>"Empowering digital experiences through innovative design and seamless functionality..."</i>
 
-                  <div className='col-md-auto'  style={{padding: '5px', textAlign: "center"  }} >
-                    <Link style={{textDecoration: "none"}} to="/projects" >
-                      <button type="button" className="btn index-link">
-                        <h3 className="display-6" style={{fontSize: "18px"}}>Projects</h3>
-                      </button>
-                    </Link>
-                  </div>
+              </h4>
 
-                  <div className='col-md-auto'  style={{padding: '5px', textAlign: "center"  }} >
+              <div className='row align-items-left justify-content-left text-content' style={{marginTop: "2rem"}}>
 
-                    <Link style={{textDecoration: "none"}} to="/gallery" >
+                <div className='col-md-auto'  style={{padding: "10px",  textAlign: "center" }} >
 
-                      <button type="button" className="btn index-link">
-                        <h3 className="display-6" style={{fontSize: "18px"}}>Gallery</h3>
-                      </button>
-                      
-                    </Link>
+                  <Link to="/about" >
 
-                  </div>
+                    <button type="button" className="solid-pill">
+                      <h3 className="pill-text">Know more about me<i class="fa-solid fa-arrow-right" style={{marginLeft: "10px"}}></i></h3>
+                    </button>
 
-                  <div className='col-md-auto'  style={{padding: '5px', textAlign: "center"  }} >
-                    <Link style={{textDecoration: "none"}} to="/services" >
-                      <button type="button" className="btn index-link">
-                        <h3 className="display-6" style={{fontSize: "18px"}}>Services</h3>
-                      </button>
-                    </Link>
-                  </div>
-
-                  <div className='col-md-auto'  style={{padding: '5px', textAlign: "center"  }} >
-
-                    <Link style={{textDecoration: "none"}} to="/contact" >
-
-                      <button type="button" className="btn index-link">
-                        <h3 className="display-6" style={{fontSize: "18px"}}>Contact</h3>
-                      </button>
-                      
-                    </Link>
-
-                  </div>
+                  </Link>
 
                 </div>
-                
+
+                <div className='col-md-auto'  style={{padding: "10px",  textAlign: "center" }} >
+
+                  <Link to="/projects" >
+
+                    <button type="button" className="solid-pill">
+                      <h3 className="pill-text">View my projects<i class="fa-solid fa-arrow-right" style={{marginLeft: "10px"}}></i></h3>
+                    </button>
+
+                  </Link>
+
+                </div>
+
               </div>
               
-              <div className="col-md-5 text-end">
-
-                <div className='row align-items-center justify-content-center'>
-
-                  <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
-                  
-                    <img src={UIUXLogo} alt="UI-UX Logo" style={{width: "70%"}} />
-
-                  </div>
-
-                </div>
-
-                <h4 className="display-6 mt-5" style={{fontSize: "25px"}}>
-
-                  <i>"Empowering digital experiences through innovative design and seamless functionality..."</i>
-
-                </h4>
-
-              </div>
-
             </div>
 
           </div>
 
-        </main>
+        </div>
 
-        <BottomNav/>
+      </main>
 
-      <Footer/>
+      <BottomNav/>
 
     </>
 

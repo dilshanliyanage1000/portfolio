@@ -2,8 +2,6 @@ import React from 'react';
 
 import MainNav from '../partials/MainNav';
 
-import Footer from '../partials/Footer';
-
 import BottomNav from '../partials/BottomNav';
 
 import HTMLCSSLogo from "../assets/img/htmlcss.png";
@@ -25,11 +23,11 @@ const Services = () => {
 
         <MainNav title={param1} />
 
-        <main className="container" style={{ marginTop: '6rem', marginBottom: '3rem' }}>
+        <main className="container" style={{ marginTop: '8rem', marginBottom: '5rem' }}>
 
             <div className="jumbotron">
 
-                <h1 className="display-5 text-center" style={{ fontSize: '3rem' }}>My Services include....</h1>
+                <h1 className="display-5 text-center theme-color fw-medium">Services</h1>
 
                 <div className="mt-4">
 
@@ -121,8 +119,6 @@ const Services = () => {
         </main>
 
         <BottomNav/>
-
-        <Footer/>
 
     </>
 

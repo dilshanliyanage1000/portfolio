@@ -4,8 +4,6 @@ import { Link } from 'react-scroll';
 
 import MainNav from '../partials/MainNav';
 
-import Footer from '../partials/Footer';
-
 import BottomNav from '../partials/BottomNav';
 
 import KandyOldImage from "../assets/img/color_grading/img.jpg";
@@ -72,52 +70,62 @@ const Gallery = () => {
 
             <MainNav title={param1} />
             
-                <main className="container" style={{ marginTop: '6rem', marginBottom: '10rem' }}>
+                <main className="container" style={{ marginTop: '8rem', marginBottom: '5rem' }}>
 
                     <div className="jumbotron">
 
-                        <h1 className="display-5 text-center" style={{ fontSize: '3rem' }}>Gallery</h1>
+                        <h1 className="display-5 text-center theme-color fw-medium">Gallery</h1>
 
                         <div className="text-center mt-4">
 
                             <div className='row align-items-center justify-content-center'>
 
                                 <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
-                                    <Link style={{textDecoration: "none"}} to="colorgrading" smooth={true} duration={500} offset={-100} >
-                                        <button type="button" className="btn index-link" style={{width: "10rem"}}>
-                                            <h3 className="display-6" style={{fontSize: "18px"}}>Color Grading</h3>
+                                    <Link style={{textDecoration: "none", padding: "10px"}} to="colorgrading" smooth={true} duration={500} offset={-100} >
+                                        <button type="button" className="solid-pill" style={{width: "15rem"}}>
+                                            <h3 className="pill-text">
+                                                <i class="fa-solid fa-droplet" style={{marginRight: "10px"}}></i>Color Grading
+                                            </h3>
                                         </button>
                                     </Link>
                                 </div>
 
                                 <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
                                     <Link style={{textDecoration: "none"}} to="business_posts" smooth={true} duration={500} offset={-100} >
-                                        <button type="button" className="btn index-link" style={{width: "10rem"}}>
-                                            <h3 className="display-6" style={{fontSize: "18px"}}>Business Posts</h3>
+                                        <button type="button" className="solid-pill" style={{width: "15rem"}}>
+                                            <h3 className="pill-text">
+                                                <i class="fa-solid fa-envelopes-bulk" style={{marginRight: "10px"}}></i>Business Posts
+                                            </h3>
                                         </button>
                                     </Link>
                                 </div>
 
                                 <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
                                     <Link style={{textDecoration: "none"}} to="doodle" smooth={true} duration={500} offset={-100} >
-                                        <button type="button" className="btn index-link" style={{width: "10rem"}}>
-                                            <h3 className="display-6" style={{fontSize: "18px"}}>Doodles</h3>
+                                        <button type="button" className="solid-pill" style={{width: "15rem"}}>
+                                            <h3 className="pill-text">
+                                                <i class="fa-solid fa-pencil" style={{marginRight: "10px"}}></i>Doodles
+                                            </h3>
                                         </button>
                                     </Link>
                                 </div>
 
                                 <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
                                     <Link style={{textDecoration: "none"}} to="logo" smooth={true} duration={500} offset={-100} >
-                                        <button type="button" className="btn index-link" style={{width: "10rem"}}>
-                                            <h3 className="display-6" style={{fontSize: "18px"}}>Logos</h3>
+                                        <button type="button" className="solid-pill" style={{width: "15rem"}}>
+                                            <h3 className="pill-text">
+                                                <i class="fa-solid fa-circle-notch" style={{marginRight: "10px"}}></i>Logos
+                                            </h3>
                                         </button>
                                     </Link>
                                 </div>
 
                                 <div className='col-md-auto'  style={{padding: '10px', textAlign: "center"  }} >
                                     <Link style={{textDecoration: "none"}} to="insta_posts" smooth={true} duration={500} offset={-100} >
-                                        <button type="button" className="btn index-link" style={{width: "10rem"}}>
-                                            <h3 className="display-6" style={{fontSize: "18px"}}>Instagram Posts</h3>
+                                        <button type="button" className="solid-pill" style={{width: "15rem"}}>
+                                            <h3 className="pill-text">
+                                                <i class="fa-brands fa-instagram" style={{marginRight: "10px"}}></i>Instagram Posts
+                                            </h3>
                                         </button>
                                     </Link>
                                 </div>
@@ -128,12 +136,13 @@ const Gallery = () => {
 
                         <section id="colorgrading">
 
-                            <h2 className="display-4 mt-5" style={{ fontSize: '30px' }}>Color Grading & Manipulations</h2>
+                            <h2 className="theme-color fw-medium display-4" style={{ fontSize: '30px', marginTop: "6rem" }}>Color Grading & Manipulations</h2>
 
                             <hr className="border border-light border-1 opacity-75" width="100" />
 
-                            <p className="display-5 mt-4" style={{ fontSize: '18px', textAlign: 'justify' }}>
-                                <b>'Motor Races (1975) - Lake Round, Kandy, Sri Lanka'</b>
+                            <p  className="text-justify mt-5" style={{ fontSize: "20px" }}>
+                                
+                                <span className='fw-medium'>'Motor Races (1975) - Lake Round, Kandy, Sri Lanka'</span>
                                 
                                 <br/><br/>
 
@@ -153,7 +162,7 @@ const Gallery = () => {
 
                                     <div className='col-md-auto' style={{ textAlign: 'center', padding: "20px" }}>
 
-                                        <p className="display-5" style={{ fontSize: '18px', textAlign: 'center' }}>
+                                        <p style={{ fontSize: '20px', textAlign: 'center' }}>
                                             Original (1975)
                                         </p>
 
@@ -165,7 +174,7 @@ const Gallery = () => {
 
                                     <div className='col-md-auto' style={{ textAlign: 'center', padding: "20px"  }}>
 
-                                        <p className="display-5" style={{ fontSize: '18px', textAlign: 'center' }}>
+                                        <p style={{ fontSize: '20px', textAlign: 'center' }}>
                                             Manipulated
                                         </p>
 
@@ -183,12 +192,12 @@ const Gallery = () => {
 
                         <section id="business_posts">
 
-                            <h2 className="display-4" style={{ fontSize: '30px', marginTop: '5rem' }}>Business Posts for Instagram</h2>
+                            <h2 className="theme-color fw-medium display-4" style={{ fontSize: '30px', marginTop: "10rem" }}>Business Posts for Instagram</h2>
 
                             <hr className="border border-light border-1 opacity-75" width="100" />
 
-                            <p className="display-5 mt-4" style={{ fontSize: '18px', textAlign: 'justify' }}>
-                                <b>'Supulvee Batiks'</b>
+                            <p className="mt-4" style={{ fontSize: '20px', textAlign: 'justify' }}>
+                                <span className='fw-medium'>'Supulvee Batiks'</span>
                                 
                                 <br/><br/>
 
@@ -249,12 +258,12 @@ const Gallery = () => {
 
                         <section id="doodle">
 
-                            <h2 className="display-4" style={{ fontSize: '30px', marginTop: '5rem' }}>Doodles</h2>
+                            <h2 className="theme-color fw-medium display-4" style={{ fontSize: '30px', marginTop: "10rem" }}>Doodles</h2>
 
                             <hr className="border border-light border-1 opacity-75" width="100" />
 
-                            <p className="display-5 mt-4" style={{ fontSize: '18px', textAlign: 'justify' }}>
-                                <b>'Bathiya & Santhush - Brand Ambassador for SONY Sri Lanka'</b>
+                            <p className="mt-4" style={{ fontSize: '20px', textAlign: 'justify' }}>
+                                <span className='fw-medium'>'Bathiya & Santhush - Brand Ambassador for SONY Sri Lanka'</span>
                                 
                                 <br/><br/>
 
@@ -269,7 +278,7 @@ const Gallery = () => {
 
                                     <div className='col-md-auto' style={{padding: '15px', textAlign: "center"  }}>
 
-                                        <p className="display-5 mt-3" style={{ fontSize: '18px', textAlign: 'center' }}>
+                                        <p className="mt-3" style={{ fontSize: '20px', textAlign: 'center' }}>
                                             Bathiya (Unedited)
                                         </p>
 
@@ -280,7 +289,7 @@ const Gallery = () => {
                                     </div>
                                     <div className='col-md-auto' style={{padding: '15px', textAlign: "center"  }}>
 
-                                        <p className="display-5 mt-3" style={{ fontSize: '18px', textAlign: 'center' }}>
+                                        <p className="mt-3" style={{ fontSize: '20px', textAlign: 'center' }}>
                                             Bathiya (Doodled)
                                         </p>
 
@@ -291,7 +300,7 @@ const Gallery = () => {
                                     </div>
                                     <div className='col-md-auto' style={{padding: '15px', textAlign: "center"  }}>
 
-                                        <p className="display-5 mt-3" style={{ fontSize: '18px', textAlign: 'center' }}>
+                                        <p className="mt-3" style={{ fontSize: '20px', textAlign: 'center' }}>
                                             Santhush (Unedited)
                                         </p>
 
@@ -302,7 +311,7 @@ const Gallery = () => {
                                     </div>
                                     <div className='col-md-auto' style={{padding: '15px', textAlign: "center"  }}>
 
-                                        <p className="display-5 mt-3" style={{ fontSize: '18px' }}>
+                                        <p className="mt-3" style={{ fontSize: '20px' }}>
                                             Santhush (Doodled)
                                         </p>
 
@@ -318,11 +327,11 @@ const Gallery = () => {
 
                         <section id="logo">
 
-                            <h2 className="display-4" style={{ fontSize: '30px', marginTop: '5rem' }}>Logos</h2>
+                            <h2 className="theme-color fw-medium display-4" style={{ fontSize: '30px', marginTop: "10rem" }}>Logos</h2>
 
                             <hr className="border border-light border-1 opacity-75" width="100" />
 
-                            <p className="display-5 mt-4" style={{ fontSize: '18px', textAlign: 'justify' }}>
+                            <p className="mt-4" style={{ fontSize: '20px', textAlign: 'justify' }}>
 
                             My logo design process begins with a thorough understanding of the brand's identity, target audience, 
                             and values. I believe that an exceptional logo should not only be visually striking but also communicate 
@@ -371,11 +380,11 @@ const Gallery = () => {
 
                         <section id="insta_posts">
 
-                            <h2 className="display-4" style={{ fontSize: '30px', marginTop: '5rem' }}>Instagram & Product Posts</h2>
+                            <h2 className="theme-color fw-medium display-4" style={{ fontSize: '30px', marginTop: "10rem" }}>Instagram & Product Posts</h2>
 
                             <hr className="border border-light border-1 opacity-75" width="100" />
 
-                            <p className="display-5 mt-4" style={{ fontSize: '18px', textAlign: 'justify' }}>
+                            <p className="mt-4" style={{ fontSize: '20px', textAlign: 'justify' }}>
 
                                 Creating Instagram posts using Photoshop allows you to have full creative control over the design and visual appeal of your content.
 
@@ -493,8 +502,6 @@ const Gallery = () => {
                 </main>
 
             <BottomNav/>
-
-            <Footer/>
 
         </>
 

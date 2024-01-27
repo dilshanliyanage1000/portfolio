@@ -10,29 +10,29 @@ import Contact from './Contact';
 
 import Projects from './Projects';
 
-import Services from './Services';
-
 import Gallery from './Gallery';
 
 const App = () => {
 
   return (
 
-   <Routes>
+    <div>
 
-      <Route exact path='/'element = {<Home/>}> </Route>
+      <Routes>
 
-      <Route path='/about' element={<About/>}> </Route>
+          <Route exact path='/'element = {<Home/>}> </Route>
 
-      <Route path='/projects' element = {<Projects/>}> </Route>
+          <Route path='/about' element={<About/>}> </Route>
 
-      <Route path='/gallery' element = {<Gallery/>}> </Route>
+          <Route path='/projects' element = {<Projects/>}> </Route>
 
-      <Route path='/services' element = {<Services/>}> </Route>
+          <Route path='/gallery' element = {<Gallery/>}> </Route>
 
-      <Route path='/contact' element = {<Contact/>}> </Route>
+          <Route path='/contact' element = {<Contact/>}> </Route>
 
-   </Routes>
+      </Routes>
+    
+    </div>
 
   );
 

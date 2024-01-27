@@ -9,7 +9,7 @@ const MainNav = ({ title }) => {
   return (
     
     <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark p-3">
-      <div className="container-fluid justify-content-md-center">
+      <div className="container-fluid justify-content-lg-center">
 
         {/* Custom logo */}
         <Link className={`navbar-brand`} to="/">
@@ -38,10 +38,6 @@ const MainNav = ({ title }) => {
 
             <li className={`nav-item ${title === "Gallery" ? 'active' : ''}`}>
               <Link className={`nav-link ${title === "Gallery" ? 'active' : ''}`} to="/gallery">Gallery</Link>
-            </li>
-
-            <li className={`nav-item ${title === "Services" ? 'active' : ''}`}>
-              <Link className={`nav-link ${title === "Services" ? 'active' : ''}`} to="/services">Services</Link>
             </li>
 
             <li className={`nav-item ${title === "Contact" ? 'active' : ''}`}>

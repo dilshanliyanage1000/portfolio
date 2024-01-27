@@ -12,11 +12,11 @@ const BottomNav = () => {
 
     <footer>
         <nav className="navbar navbar-dark bg-dark fixed-bottom">
-        <div className="container">
-            <p className="text-center mx-auto my-0" style={{ color: 'rgb(209, 209, 209)' }}>
-            Dilshan Liyanage &copy; {currentYear}. All rights reserved
-            </p>
-        </div>
+            <div className="container">
+                <p className="text-center mx-auto my-0" style={{ color: 'rgb(209, 209, 209)' }}>
+                    Dilshan Liyanage &copy; Copyright {currentYear}. All rights reserved.
+                </p>
+            </div>
         </nav>
     </footer>
 
