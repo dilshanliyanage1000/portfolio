@@ -140,7 +140,7 @@ const Gallery = () => {
 
                             <hr className="border border-light border-1 opacity-75" width="100" />
 
-                            <p  className="text-justify mt-5" style={{ fontSize: "20px" }}>
+                            <p  className="mt-5" style={{ fontSize: "20px" }}>
                                 
                                 <span className='fw-medium'>'Motor Races (1975) - Lake Round, Kandy, Sri Lanka'</span>
                                 
@@ -167,7 +167,7 @@ const Gallery = () => {
                                         </p>
 
                                         <a href={KandyOldImage} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none' }}>
-                                            <img src={KandyOldImage} alt='SeaSide Logo' style={{ width: '25rem' }} />
+                                            <img src={KandyOldImage} alt={KandyOldImage}style={{ width: '20rem' }} />
                                         </a>
 
                                     </div>
@@ -179,7 +179,7 @@ const Gallery = () => {
                                         </p>
 
                                         <a href={KandyNewImage} target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none'}}>
-                                            <img src={KandyNewImage} alt='SeaSide Logo' style={{ width: '25rem' }} />
+                                            <img src={KandyNewImage} alt={KandyNewImage} style={{ width: '20rem' }} />
                                         </a>
 
                                     </div>
@@ -196,7 +196,7 @@ const Gallery = () => {
 
                             <hr className="border border-light border-1 opacity-75" width="100" />
 
-                            <p className="mt-4" style={{ fontSize: '20px', textAlign: 'justify' }}>
+                            <p className="mt-4" style={{ fontSize: '20px' }}>
                                 <span className='fw-medium'>'Supulvee Batiks'</span>
                                 
                                 <br/><br/>
@@ -262,7 +262,7 @@ const Gallery = () => {
 
                             <hr className="border border-light border-1 opacity-75" width="100" />
 
-                            <p className="mt-4" style={{ fontSize: '20px', textAlign: 'justify' }}>
+                            <p className="mt-4" style={{ fontSize: '20px' }}>
                                 <span className='fw-medium'>'Bathiya & Santhush - Brand Ambassador for SONY Sri Lanka'</span>
                                 
                                 <br/><br/>
@@ -331,7 +331,7 @@ const Gallery = () => {
 
                             <hr className="border border-light border-1 opacity-75" width="100" />
 
-                            <p className="mt-4" style={{ fontSize: '20px', textAlign: 'justify' }}>
+                            <p className="mt-4" style={{ fontSize: '20px' }}>
 
                             My logo design process begins with a thorough understanding of the brand's identity, target audience, 
                             and values. I believe that an exceptional logo should not only be visually striking but also communicate 
@@ -384,7 +384,7 @@ const Gallery = () => {
 
                             <hr className="border border-light border-1 opacity-75" width="100" />
 
-                            <p className="mt-4" style={{ fontSize: '20px', textAlign: 'justify' }}>
+                            <p className="mt-4" style={{ fontSize: '20px' }}>
 
                                 Creating Instagram posts using Photoshop allows you to have full creative control over the design and visual appeal of your content.
 
