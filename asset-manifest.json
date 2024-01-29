@@ -1,24 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ec511215.css",
-    "main.js": "/portfolio/static/js/main.644042d9.js",
+    "main.js": "/portfolio/static/js/main.6f27cba0.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
-    "static/media/myTwo.png": "/portfolio/static/media/myTwo.dc55c050fb1d26ab866f.png",
-    "static/media/me_1.png": "/portfolio/static/media/me_1.29e03ed3f3cfef371971.png",
-    "static/media/Dian b&w.png": "/portfolio/static/media/Dian b&w.08d48f6edbb198be4ffc.png",
-    "static/media/sayu.png": "/portfolio/static/media/sayu.f31bf36c64f034f15a63.png",
-    "static/media/Dian Retro (Cockpit).png": "/portfolio/static/media/Dian Retro (Cockpit).5ee6624a0aee394a4cfb.png",
-    "static/media/lali.png": "/portfolio/static/media/lali.bc1db1d799d0108225f5.png",
-    "static/media/Dian Retro (Airbus).png": "/portfolio/static/media/Dian Retro (Airbus).a548527980ca265f834c.png",
-    "static/media/Daya mama.png": "/portfolio/static/media/Daya mama.2b4fd62d620249bfc380.png",
+    "static/media/Dian Retro (Airbus).png": "/portfolio/static/media/Dian Retro (Airbus).172d6b5055e7e8753c37.png",
+    "static/media/me_1.png": "/portfolio/static/media/me_1.40c00ebef7cd19122d34.png",
     "static/media/soundpeats.png": "/portfolio/static/media/soundpeats.51124563225dd8915477.png",
-    "static/media/cj vintage.png": "/portfolio/static/media/cj vintage.b41a9dd7e951a7dba29d.png",
+    "static/media/sayu.png": "/portfolio/static/media/sayu.806ffdbbd968cf905172.png",
     "static/media/Ishani.png": "/portfolio/static/media/Ishani.233b70fd708f39995388.png",
+    "static/media/myTwo.png": "/portfolio/static/media/myTwo.8300c7964b4672d19112.png",
     "static/media/santhush.png": "/portfolio/static/media/santhush.415754ed6e090ff42bb9.png",
     "static/media/bathiya.png": "/portfolio/static/media/bathiya.a506218bf5df1316f4a2.png",
     "static/media/myThree.png": "/portfolio/static/media/myThree.b9d11d156aca0c82156c.png",
     "static/media/myFour.png": "/portfolio/static/media/myFour.2d940851b0d462480297.png",
     "static/media/sajeethree.png": "/portfolio/static/media/sajeethree.c24ed3f36d9235c3b043.png",
+    "static/media/cj vintage.png": "/portfolio/static/media/cj vintage.04b8a7541b56eaace4f7.png",
+    "static/media/Daya mama.png": "/portfolio/static/media/Daya mama.9691af510715e06b42cf.png",
     "static/media/seasidelodge.png": "/portfolio/static/media/seasidelodge.920600e898d089a49df1.png",
     "static/media/myOne.png": "/portfolio/static/media/myOne.b84cc067ea153471cb2c.png",
     "static/media/nfs heritage.png": "/portfolio/static/media/nfs heritage.5e4bc07407472d30463d.png",
@@ -31,7 +28,10 @@
     "static/media/006.png": "/portfolio/static/media/006.66770449a1c5428fe6e7.png",
     "static/media/Hashi Vintage.png": "/portfolio/static/media/Hashi Vintage.77c67a92c3ffbb399231.png",
     "static/media/002.png": "/portfolio/static/media/002.74889c57e468345c0ba8.png",
+    "static/media/Dian b&w.png": "/portfolio/static/media/Dian b&w.b0c569bceb337b9efa1a.png",
     "static/media/004.png": "/portfolio/static/media/004.40a915d1946618a7fb1e.png",
+    "static/media/lali.png": "/portfolio/static/media/lali.cfe944f50bf1549b0919.png",
+    "static/media/Dian Retro (Cockpit).png": "/portfolio/static/media/Dian Retro (Cockpit).b61bdf8c15ec7203cae5.png",
     "static/media/grocery.png": "/portfolio/static/media/grocery.1b5855eb5bf01813eacc.png",
     "static/media/ccsai-tamil-two.png": "/portfolio/static/media/ccsai-tamil-two.3f73ae1c6482c968e64b.png",
     "static/media/canadiankomla.png": "/portfolio/static/media/canadiankomla.f181bf1a00d4f06a7716.png",
@@ -84,11 +84,11 @@
     "static/media/poppins-latin-100.woff2": "/portfolio/static/media/poppins-latin-100.ab66112cac2ca46d6cf8.woff2",
     "index.html": "/portfolio/index.html",
     "main.ec511215.css.map": "/portfolio/static/css/main.ec511215.css.map",
-    "main.644042d9.js.map": "/portfolio/static/js/main.644042d9.js.map",
+    "main.6f27cba0.js.map": "/portfolio/static/js/main.6f27cba0.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec511215.css",
-    "static/js/main.644042d9.js"
+    "static/js/main.6f27cba0.js"
   ]
 }
