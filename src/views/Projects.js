@@ -298,7 +298,7 @@ const Projects = () => {
 
                                         <div>
                                             
-                                            <h3 className="display-6" style={{ fontSize: "35px", paddingLeft: "1rem"}}>Grocery Ordering Application</h3>
+                                            <h3 className="display-6" style={{ fontSize: "35px", paddingLeft: "1rem"}}>SimplyOrganic - Grocery Ordering Application</h3>
 
                                             <h3 className="display-6" style={{ fontSize: "20px", paddingLeft: "1rem" }}>
                                                 <span className='theme-color fw-medium'>CENTENNIAL COLLEGE</span>
@@ -311,14 +311,24 @@ const Projects = () => {
                                 </div>
 
                                 <p style={{ fontSize:"20px", paddingLeft: "2rem", marginTop: "2rem" }}>
-                                    Grocery ordering application was created in order to manage stocks and sales of an online supermarket. The user is notified with appropriate
-                                    messages to signify the stage of the process. The system uses procedures, triggers, indexes, functions and packages to handle the data. This application uses Oracle Xe Database
-                                    alongside PL/SQL as the technology
+                                    The Simply Organic Grocery Ordering Application is a
+                                    collaborative web-based platform designed to facilitate the
+                                    seamless purchase of groceries while efficiently tracking
+                                    essential information such as customer details, order specifics,
+                                    grocery items, and delivery information. This application
+                                    employs REST API interactions with a Node.js backend, ensuring
+                                    smooth communication throughout the ordering process. Developed
+                                    using the MEAN Stack, which comprises MongoDB, Express, Angular,
+                                    and NodeJS, the system integrates GitHub for version control and
+                                    utilizes Render for effective deployment.
                                 </p>
 
                                 <div className="row" style={{ paddingLeft: "3rem", marginTop: "2rem"}}>
-                                    <div className="skill-pill">Oracle Xe</div>
-                                    <div className="skill-pill">PL/SQL</div>
+                                    <div className="skill-pill">Angular</div>
+                                    <div className="skill-pill">Express</div>
+                                    <div className="skill-pill">Node.js</div>
+                                    <div className="skill-pill">MongoDB</div>
+                                    <div className="skill-pill">REST API</div>
                                 </div>
 
                             </div>
