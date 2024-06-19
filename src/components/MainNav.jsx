@@ -9,7 +9,7 @@ const MainNav = ({ title }) => {
     <nav className="navbar navbar-expand-lg fixed-top frosted-glass">
       <div className="container-fluid justify-content-lg-center">
 
-        <Link className={`navbar-brand`} to="/">
+        <Link className={`navbar-brand`} to="/portfolio/">
           <img src={MainLogo} alt="Dila Logo" width="45" />
         </Link>
 
@@ -22,19 +22,19 @@ const MainNav = ({ title }) => {
           <ul className="navbar-nav ml-auto">
 
             <li className={`nav-item ${title === "Home" ? 'active' : ''}`}>
-              <Link className={`nav-link ${title === "Home" ? 'active' : ''}`} to="/">Home</Link>
+              <Link className={`nav-link ${title === "Home" ? 'active' : ''}`} to="/portfolio/">Home</Link>
             </li>
 
             <li className={`nav-item ${title === "Projects" ? 'active' : ''}`}>
-              <Link className={`nav-link ${title === "Projects" ? 'active' : ''}`} to="/projects">Projects</Link>
+              <Link className={`nav-link ${title === "Projects" ? 'active' : ''}`} to="/portfolio/projects">Projects</Link>
             </li>
 
             <li className={`nav-item ${title === "Gallery" ? 'active' : ''}`}>
-              <Link className={`nav-link ${title === "Gallery" ? 'active' : ''}`} to="/gallery">Gallery</Link>
+              <Link className={`nav-link ${title === "Gallery" ? 'active' : ''}`} to="/portfolio/gallery">Gallery</Link>
             </li>
 
             <li className={`nav-item ${title === "Contact" ? 'active' : ''}`}>
-              <Link className={`nav-link ${title === "Contact" ? 'active' : ''}`} to="/contact">Contact</Link>
+              <Link className={`nav-link ${title === "Contact" ? 'active' : ''}`} to="/portfolio/contact">Contact</Link>
             </li>
 
           </ul>

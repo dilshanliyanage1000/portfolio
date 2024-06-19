@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import MainNav from '../components/MainNav';
 import BottomNav from '../components/BottomNav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link as SmoothScroll } from 'react-scroll';
 import { faArrowUp, faCircleNotch, faDroplet, faEnvelopesBulk, faPencil } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import KandyOldImage from "../assets/img/color_grading/img.jpg";
@@ -527,7 +528,7 @@ const Gallery = () => {
 
                 </div>
 
-            </div>
+            </div >
 
             <BottomNav />
 

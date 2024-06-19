@@ -54,7 +54,7 @@ const Home = () => {
     }, []);
 
     useEffect(() => {
-        document.body.style.backgroundColor = '#11222b';
+        document.body.style.backgroundColor = "#11222b";
         return () => {
             document.body.style.backgroundColor = '';
         };
@@ -157,7 +157,6 @@ const Home = () => {
                                 </div>
 
                             </div>
-
 
                         </div>
 
