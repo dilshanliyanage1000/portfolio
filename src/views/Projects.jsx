@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3, faReact, faJs, faBootstrap, faPhp, faGithub, faFigma, faNode, faAngular, faCodepen } from '@fortawesome/free-brands-svg-icons';
 import { faLink, faBriefcase, faGraduationCap, faCode, faDatabase, faVialVirus, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import { Link as SmoothScroll } from 'react-scroll';
 import BgTwo from "../assets/img/bg/abstract_02.png";
 
 const Projects = () => {
