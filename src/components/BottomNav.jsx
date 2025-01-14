@@ -11,9 +11,9 @@ const BottomNav = () => {
     return (
 
         <footer>
-            <nav className="navbar frosted-glass fixed-bottom">
+            <nav className="navbar">
                 <div className="container">
-                    <p className="text-center mx-auto my-0" style={{ color: 'rgb(209, 209, 209)' }}>
+                    <p className="text-center mx-auto my-0 mb-4" style={{ color: 'rgb(209, 209, 209)' }}>
                         Dilshan Liyanage &copy; Copyright {currentYear}. All rights reserved.
                     </p>
                 </div>

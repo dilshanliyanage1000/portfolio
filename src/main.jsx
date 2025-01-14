@@ -6,6 +6,8 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./assets/css/App.css";
 import "./assets/css/Fonts.css";
 
+import FollowCursor from './components/FollowCursor';
+
 import App from './App';
 
 const router = createBrowserRouter([
@@ -17,6 +19,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <FollowCursor />
     <RouterProvider router={router} />
   </React.StrictMode>
 );

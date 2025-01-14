@@ -31,7 +31,7 @@ import CanadianKomlaLogo from "../assets/img/logos/canadiankomla.png";
 import CCSAITamilOne from "../assets/img/logos/ccsai-tamil-one.png";
 import CCSAITamilTwo from "../assets/img/logos/ccsai-tamil-two.png";
 import SimplyOrganicLogo from "../assets/img/logos/simplyorganic.png";
-import BgOne from "../assets/img/bg/abstract_01.png";
+import BgOne from "../assets/img/bg/abstract_01.jpg";
 
 const Gallery = () => {
 

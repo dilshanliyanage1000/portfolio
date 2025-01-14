@@ -1,107 +1,107 @@
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
+.raleway-thin {
+  font-family: "Raleway", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
 
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
+.raleway-extralight {
+  font-family: "Raleway", sans-serif;
   font-weight: 200;
   font-style: normal;
 }
 
-.poppins-light {
-  font-family: "Poppins", sans-serif;
+.raleway-light {
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
+.raleway-regular {
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
+.raleway-medium {
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
+.raleway-semibold {
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
+.raleway-bold {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
+.raleway-extrabold {
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
 
-.poppins-black {
-  font-family: "Poppins", sans-serif;
+.raleway-black {
+  font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
+.raleway-thin-italic {
+  font-family: "Raleway", sans-serif;
   font-weight: 100;
   font-style: italic;
 }
 
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
+.raleway-extralight-italic {
+  font-family: "Raleway", sans-serif;
   font-weight: 200;
   font-style: italic;
 }
 
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
+.raleway-light-italic {
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-style: italic;
 }
 
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
+.raleway-regular-italic {
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
+.raleway-medium-italic {
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-style: italic;
 }
 
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
+.raleway-semibold-italic {
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-style: italic;
 }
 
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
+.raleway-bold-italic {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-style: italic;
 }
 
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
+.raleway-extrabold-italic {
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-style: italic;
 }
 
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
+.raleway-black-italic {
+  font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-style: italic;
 }
@@ -110,4 +110,28 @@
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "NeonFont";
+  src: url("../fonts/Clip.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.neon-text {
+  font-family: "NeonFont", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 5px #1a7f92, /* Lighter shade */ 0 0 10px #338c9f,
+    /* Lighter shade */ 0 0 15px #016d7f, /* Original color */ 0 0 20px #015c6d,
+    /* Darker shade */ 0 0 25px #013c4d; /* Darker shade */
+}
+
+.neon-font {
+  font-family: "NeonFont", sans-serif;
+  letter-spacing: 3px;
 }
