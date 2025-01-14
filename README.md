@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website! 🚀 This is where I showcase my skills, projects, and journey as a **UI/UX Designer** and **Full Stack Web Developer**. Explore my work and get to know more about me. ✨
 
 ## 🌐 Live Demo
-Check out the live portfolio site here: [Dilshan Liyanage | Portfolio]([https://your-portfolio-link.com](https://dilshanliyanage1000.github.io/portfolio/))
+Check out the live portfolio site here: [Dilshan Liyanage | Portfolio](https://dilshanliyanage1000.github.io/portfolio/)
 
 ---
 
