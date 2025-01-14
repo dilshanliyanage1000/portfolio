@@ -189,44 +189,42 @@ const Home = () => {
 
                             <div className='mt-4 row align-items-center justify-content-center text-content'>
 
-                                <div className='col-md-auto text-center'>
-                                    <Link
-                                        style={{ textDecoration: "none" }}
-                                        type="button"
-                                        className="skill-pill"
-                                        to="https://www.linkedin.com/in/dilaliyanage/"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        <FontAwesomeIcon icon={faLinkedin} style={{ color: "#78bbff" }} />&nbsp;&nbsp;LinkedIn
-                                    </Link>
+                                <Link
+                                    style={{ textDecoration: "none" }}
+                                    type="button"
+                                    className="skill-pill"
+                                    to="https://www.linkedin.com/in/dilaliyanage/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faLinkedin} style={{ color: "#78bbff" }} />&nbsp;&nbsp;LinkedIn
+                                </Link>
 
-                                    <Link
-                                        style={{ textDecoration: "none" }}
-                                        type="button"
-                                        className="skill-pill"
-                                        to="https://github.com/dilshanliyanage1000/"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        <FontAwesomeIcon icon={faGithub} style={{ color: "#bebaff" }} />&nbsp;&nbsp;GitHub
-                                    </Link>
+                                <Link
+                                    style={{ textDecoration: "none" }}
+                                    type="button"
+                                    className="skill-pill"
+                                    to="https://github.com/dilshanliyanage1000/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faGithub} style={{ color: "#bebaff" }} />&nbsp;&nbsp;GitHub
+                                </Link>
 
-                                    <Link
-                                        style={{ textDecoration: "none" }}
-                                        type="button"
-                                        className="skill-pill"
-                                        to="mailto:dilshanliyanage@gmail.com"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        <FontAwesomeIcon icon={faPaperPlane} style={{ color: "#f5da62" }} />&nbsp;&nbsp;Email
-                                    </Link>
+                                <Link
+                                    style={{ textDecoration: "none" }}
+                                    type="button"
+                                    className="skill-pill"
+                                    to="mailto:dilshanliyanage@gmail.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faPaperPlane} style={{ color: "#f5da62" }} />&nbsp;&nbsp;Email
+                                </Link>
 
-                                    <Link style={{ textDecoration: "none" }}
-                                        type="button"
-                                        className="skill-pill"
-                                        onClick={downloadResume}>
-                                        <FontAwesomeIcon icon={faCloudArrowDown} style={{ color: "#8bbbc7" }} />&nbsp;&nbsp;Resume
-                                    </Link>
-                                </div>
+                                <Link style={{ textDecoration: "none" }}
+                                    type="button"
+                                    className="skill-pill"
+                                    onClick={downloadResume}>
+                                    <FontAwesomeIcon icon={faCloudArrowDown} style={{ color: "#8bbbc7" }} />&nbsp;&nbsp;Resume
+                                </Link>
 
                             </div>
 
