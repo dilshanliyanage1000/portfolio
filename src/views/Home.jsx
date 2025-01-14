@@ -193,42 +193,36 @@ const Home = () => {
                                     <Link
                                         style={{ textDecoration: "none" }}
                                         type="button"
-                                        className="frosted-glass theme-button"
+                                        className="skill-pill"
                                         to="https://www.linkedin.com/in/dilaliyanage/"
                                         target="_blank"
                                         rel="noopener noreferrer">
                                         <FontAwesomeIcon icon={faLinkedin} style={{ color: "#78bbff" }} />&nbsp;&nbsp;LinkedIn
                                     </Link>
-                                </div>
 
-                                <div className='col-md-auto text-center'>
                                     <Link
                                         style={{ textDecoration: "none" }}
                                         type="button"
-                                        className="frosted-glass theme-button"
+                                        className="skill-pill"
                                         to="https://github.com/dilshanliyanage1000/"
                                         target="_blank"
                                         rel="noopener noreferrer">
                                         <FontAwesomeIcon icon={faGithub} style={{ color: "#bebaff" }} />&nbsp;&nbsp;GitHub
                                     </Link>
-                                </div>
 
-                                <div className='col-md-auto text-center'>
                                     <Link
                                         style={{ textDecoration: "none" }}
                                         type="button"
-                                        className="frosted-glass theme-button"
+                                        className="skill-pill"
                                         to="mailto:dilshanliyanage@gmail.com"
                                         target="_blank"
                                         rel="noopener noreferrer">
                                         <FontAwesomeIcon icon={faPaperPlane} style={{ color: "#f5da62" }} />&nbsp;&nbsp;Email
                                     </Link>
-                                </div>
 
-                                <div className='col-md-auto text-center'>
                                     <Link style={{ textDecoration: "none" }}
                                         type="button"
-                                        className="frosted-glass theme-button"
+                                        className="skill-pill"
                                         onClick={downloadResume}>
                                         <FontAwesomeIcon icon={faCloudArrowDown} style={{ color: "#8bbbc7" }} />&nbsp;&nbsp;Resume
                                     </Link>
@@ -258,15 +252,15 @@ const Home = () => {
 
                             <div className="row low-margin">
 
-                                <div className="frosted-glass skill-pill"><SkillIcon path={ReactLogo} />&nbsp;&nbsp;React</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={JSLogo} />&nbsp;&nbsp;JavaScript</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={BootstrapLogo} />&nbsp;&nbsp;Bootstrap</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={JQueryLogo} />&nbsp;&nbsp;jQuery</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={HTML5Logo} />&nbsp;&nbsp;HTML</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={CCS3Logo} />&nbsp;&nbsp;CSS</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={JSONLogo} />&nbsp;&nbsp;JSON</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={EJSLogo} />&nbsp;&nbsp;EJS</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={AJAXLogo} />&nbsp;&nbsp;AJAX</div>
+                                <div className="skill-pill"><SkillIcon path={ReactLogo} />&nbsp;&nbsp;React</div>
+                                <div className="skill-pill"><SkillIcon path={JSLogo} />&nbsp;&nbsp;JavaScript</div>
+                                <div className="skill-pill"><SkillIcon path={BootstrapLogo} />&nbsp;&nbsp;Bootstrap</div>
+                                <div className="skill-pill"><SkillIcon path={JQueryLogo} />&nbsp;&nbsp;jQuery</div>
+                                <div className="skill-pill"><SkillIcon path={HTML5Logo} />&nbsp;&nbsp;HTML</div>
+                                <div className="skill-pill"><SkillIcon path={CCS3Logo} />&nbsp;&nbsp;CSS</div>
+                                <div className="skill-pill"><SkillIcon path={JSONLogo} />&nbsp;&nbsp;JSON</div>
+                                <div className="skill-pill"><SkillIcon path={EJSLogo} />&nbsp;&nbsp;EJS</div>
+                                <div className="skill-pill"><SkillIcon path={AJAXLogo} />&nbsp;&nbsp;AJAX</div>
 
                             </div>
 
@@ -274,13 +268,13 @@ const Home = () => {
 
                             <div className="row low-margin">
 
-                                <div className="frosted-glass skill-pill"><SkillIcon path={NodeJSLogo} />&nbsp;&nbsp;Node.js</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={RESTAPILogo} />&nbsp;&nbsp;REST API</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={SpringbootLogo} />&nbsp;&nbsp;SpringBoot</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={ExpressJSLogo} />&nbsp;&nbsp;Express</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={JavaLogo} />&nbsp;&nbsp;Java</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={PHPLogo} />&nbsp;&nbsp;PHP</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={NETCoreLogo} />&nbsp;&nbsp;ASP .NET Core</div>
+                                <div className="skill-pill"><SkillIcon path={NodeJSLogo} />&nbsp;&nbsp;Node.js</div>
+                                <div className="skill-pill"><SkillIcon path={RESTAPILogo} />&nbsp;&nbsp;REST API</div>
+                                <div className="skill-pill"><SkillIcon path={SpringbootLogo} />&nbsp;&nbsp;SpringBoot</div>
+                                <div className="skill-pill"><SkillIcon path={ExpressJSLogo} />&nbsp;&nbsp;Express</div>
+                                <div className="skill-pill"><SkillIcon path={JavaLogo} />&nbsp;&nbsp;Java</div>
+                                <div className="skill-pill"><SkillIcon path={PHPLogo} />&nbsp;&nbsp;PHP</div>
+                                <div className="skill-pill"><SkillIcon path={NETCoreLogo} />&nbsp;&nbsp;ASP .NET Core</div>
 
                             </div>
 
@@ -288,10 +282,10 @@ const Home = () => {
 
                             <div className="row low-margin">
 
-                                <div className="frosted-glass skill-pill"><SkillIcon path={MongoDBLogo} />&nbsp;&nbsp;MongoDB</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={OracleXELogo} />&nbsp;&nbsp;Oracle Xe</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={MySQLLogo} />&nbsp;&nbsp;MySQL</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={SQLServerLogo} />&nbsp;&nbsp;Microsoft SQL Server</div>
+                                <div className="skill-pill"><SkillIcon path={MongoDBLogo} />&nbsp;&nbsp;MongoDB</div>
+                                <div className="skill-pill"><SkillIcon path={OracleXELogo} />&nbsp;&nbsp;Oracle Xe</div>
+                                <div className="skill-pill"><SkillIcon path={MySQLLogo} />&nbsp;&nbsp;MySQL</div>
+                                <div className="skill-pill"><SkillIcon path={SQLServerLogo} />&nbsp;&nbsp;Microsoft SQL Server</div>
 
                             </div>
 
@@ -299,9 +293,9 @@ const Home = () => {
 
                             <div className="row low-margin">
 
-                                <div className="frosted-glass skill-pill"><SkillIcon path={JenkinsLogo} />&nbsp;&nbsp;Jenkins</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={DockerLogo} />&nbsp;&nbsp;Docker</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={AWSLogo} />&nbsp;&nbsp;Amazon Web Services (AWS)</div>
+                                <div className="skill-pill"><SkillIcon path={JenkinsLogo} />&nbsp;&nbsp;Jenkins</div>
+                                <div className="skill-pill"><SkillIcon path={DockerLogo} />&nbsp;&nbsp;Docker</div>
+                                <div className="skill-pill"><SkillIcon path={AWSLogo} />&nbsp;&nbsp;Amazon Web Services (AWS)</div>
 
                             </div>
 
@@ -309,9 +303,9 @@ const Home = () => {
 
                             <div className="row low-margin">
 
-                                <div className="frosted-glass skill-pill"><FontAwesomeIcon icon={faGithub} style={{ color: "#bebaff" }} />&nbsp;&nbsp;GitHub</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={GitLogo} />&nbsp;&nbsp;GIT</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={BitBucketLogo} />&nbsp;&nbsp;BitBucket</div>
+                                <div className="skill-pill"><FontAwesomeIcon icon={faGithub} style={{ color: "#bebaff" }} />&nbsp;&nbsp;GitHub</div>
+                                <div className="skill-pill"><SkillIcon path={GitLogo} />&nbsp;&nbsp;GIT</div>
+                                <div className="skill-pill"><SkillIcon path={BitBucketLogo} />&nbsp;&nbsp;BitBucket</div>
 
                             </div>
 
@@ -319,20 +313,12 @@ const Home = () => {
 
                             <div className="row">
 
-                                <div className="frosted-glass skill-pill"><SkillIcon path={FigmaLogo} />&nbsp;&nbsp;Figma</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={PhotoshopLogo} />&nbsp;&nbsp;Adobe Photoshop</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={AfterEffectsLogo} />&nbsp;&nbsp;Adobe After Effects</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={XDLogo} />&nbsp;&nbsp;Adobe xD</div>
+                                <div className="skill-pill"><SkillIcon path={FigmaLogo} />&nbsp;&nbsp;Figma</div>
+                                <div className="skill-pill"><SkillIcon path={PhotoshopLogo} />&nbsp;&nbsp;Adobe Photoshop</div>
+                                <div className="skill-pill"><SkillIcon path={AfterEffectsLogo} />&nbsp;&nbsp;Adobe After Effects</div>
+                                <div className="skill-pill"><SkillIcon path={XDLogo} />&nbsp;&nbsp;Adobe xD</div>
 
                             </div>
-
-                            {/* <p className="mt-4 fs-5 raleway-light">Mobile Development</p>
-
-                            <div className="row">
-
-                                <div className="skill-pill"><SkillIcon path={KotlinLogo} />&nbsp;&nbsp;Kotlin</div>
-
-                            </div> */}
 
                         </div>
 
@@ -373,7 +359,7 @@ const Home = () => {
                             </div>
 
                             <div className="row mt-2">
-                                <div className="frosted-glass skill-pill"><SkillIcon path={CalendarLogo} />&nbsp;&nbsp;Sep 2024 - Present</div>
+                                <div className="skill-pill"><SkillIcon path={CalendarLogo} />&nbsp;&nbsp;Sep 2024 - Present</div>
                             </div>
 
                             <div className="mt-4 raleway-light fs-6">
@@ -430,8 +416,8 @@ const Home = () => {
                             </div>
 
                             <div className="row mt-2">
-                                <div className="frosted-glass skill-pill"><SkillIcon path={CalendarLogo} />&nbsp;&nbsp;Sep 2023 - Dec 2023</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={CalendarLogo} />&nbsp;&nbsp;May 2024 - Aug 2024</div>
+                                <div className="skill-pill"><SkillIcon path={CalendarLogo} />&nbsp;&nbsp;Sep 2023 - Dec 2023</div>
+                                <div className="skill-pill"><SkillIcon path={CalendarLogo} />&nbsp;&nbsp;May 2024 - Aug 2024</div>
                             </div>
 
                             <div className="mt-4 raleway-light fs-6">
@@ -491,7 +477,7 @@ const Home = () => {
                             </div>
 
                             <div className="row mt-2">
-                                <div className="frosted-glass skill-pill"><SkillIcon path={CalendarLogo} />&nbsp;&nbsp;Sep 2020 - Aug 2022</div>
+                                <div className="skill-pill"><SkillIcon path={CalendarLogo} />&nbsp;&nbsp;Sep 2020 - Aug 2022</div>
                             </div>
 
                             <div className="mt-4 raleway-light fs-6">
@@ -552,7 +538,7 @@ const Home = () => {
                                         <Link
                                             style={{ textDecoration: "none" }}
                                             type="button"
-                                            className="frosted-glass skill-pill"
+                                            className="skill-pill"
                                             to="https://wimtach.centennialcollege.ca/"
                                             target="_blank"
                                             rel="noopener noreferrer">
@@ -562,7 +548,7 @@ const Home = () => {
                                         <Link
                                             style={{ textDecoration: "none" }}
                                             type="button"
-                                            className="frosted-glass skill-pill"
+                                            className="skill-pill"
                                             to="https://www.figma.com/design/7w2rsR4ZqMs1GKHPIDUXHl/WIMTACH-Website?node-id=0-1&p=f&t=jxJtU9vCSyhERTdy-0"
                                             target="_blank"
                                             rel="noopener noreferrer">
@@ -597,7 +583,7 @@ const Home = () => {
                                         <Link
                                             style={{ textDecoration: "none" }}
                                             type="button"
-                                            className="frosted-glass skill-pill"
+                                            className="skill-pill"
                                             to="https://github.com/dilshanliyanage1000/pix-share"
                                             target="_blank"
                                             rel="noopener noreferrer">
@@ -607,7 +593,7 @@ const Home = () => {
                                         <Link
                                             style={{ textDecoration: "none" }}
                                             type="button"
-                                            className="frosted-glass skill-pill"
+                                            className="skill-pill"
                                             to="https://github.com/dilshanliyanage1000/PixshareAPI"
                                             target="_blank"
                                             rel="noopener noreferrer">
@@ -646,7 +632,7 @@ const Home = () => {
                                         <Link
                                             style={{ textDecoration: "none" }}
                                             type="button"
-                                            className="frosted-glass skill-pill"
+                                            className="skill-pill"
                                             to="https://github.com/dilshanliyanage1000/WatchFlix"
                                             target="_blank"
                                             rel="noopener noreferrer">
@@ -681,7 +667,7 @@ const Home = () => {
                                         <Link
                                             style={{ textDecoration: "none" }}
                                             type="button"
-                                            className="frosted-glass skill-pill"
+                                            className="skill-pill"
                                             to="https://dolcegourmando.com/"
                                             target="_blank"
                                             rel="noopener noreferrer">
@@ -691,7 +677,7 @@ const Home = () => {
                                         <Link
                                             style={{ textDecoration: "none" }}
                                             type="button"
-                                            className="frosted-glass skill-pill"
+                                            className="skill-pill"
                                             to="https://www.figma.com/design/UyDK0A795CFVsY7DOsytO7/Dolce-Gourmando-(Client)?t=PDwoPB7cRLIo2tIF-0"
                                             target="_blank"
                                             rel="noopener noreferrer">
@@ -730,7 +716,7 @@ const Home = () => {
                                         <Link
                                             style={{ textDecoration: "none" }}
                                             type="button"
-                                            className="frosted-glass skill-pill"
+                                            className="skill-pill"
                                             to="https://main--vital-plus.netlify.app/"
                                             target="_blank"
                                             rel="noopener noreferrer">
@@ -740,7 +726,7 @@ const Home = () => {
                                         <Link
                                             style={{ textDecoration: "none" }}
                                             type="button"
-                                            className="frosted-glass skill-pill"
+                                            className="skill-pill"
                                             to="https://github.com/haneefmhmmd/Vital-Plus"
                                             target="_blank"
                                             rel="noopener noreferrer">
@@ -775,7 +761,7 @@ const Home = () => {
                                         <Link
                                             style={{ textDecoration: "none" }}
                                             type="button"
-                                            className="frosted-glass skill-pill"
+                                            className="skill-pill"
                                             to="https://simply-organic-frontend.onrender.com/"
                                             target="_blank"
                                             rel="noopener noreferrer">
@@ -785,7 +771,7 @@ const Home = () => {
                                         <Link
                                             style={{ textDecoration: "none" }}
                                             type="button"
-                                            className="frosted-glass skill-pill"
+                                            className="skill-pill"
                                             to="https://github.com/Simply-Organic/simply-organic"
                                             target="_blank"
                                             rel="noopener noreferrer">
@@ -824,7 +810,7 @@ const Home = () => {
                                         <Link
                                             style={{ textDecoration: "none" }}
                                             type="button"
-                                            className="frosted-glass skill-pill"
+                                            className="skill-pill"
                                             to="https://dilshanliyanage1000.github.io/portfolio/"
                                             target="_blank"
                                             rel="noopener noreferrer">
@@ -834,7 +820,7 @@ const Home = () => {
                                         <Link
                                             style={{ textDecoration: "none" }}
                                             type="button"
-                                            className="frosted-glass skill-pill"
+                                            className="skill-pill"
                                             to="https://github.com/dilshanliyanage1000/portfolio/"
                                             target="_blank"
                                             rel="noopener noreferrer">
@@ -869,7 +855,7 @@ const Home = () => {
                                         <Link
                                             style={{ textDecoration: "none" }}
                                             type="button"
-                                            className="frosted-glass skill-pill"
+                                            className="skill-pill"
                                             to="https://github.com/dilshanliyanage1000/fms/"
                                             target="_blank"
                                             rel="noopener noreferrer">
@@ -921,9 +907,9 @@ const Home = () => {
                             </div>
 
                             <div className="row mt-2">
-                                <div className="frosted-glass skill-pill"><SkillIcon path={CalendarLogo} />&nbsp;&nbsp;Jan 2023 - Dec 2024</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={GraduateLogo} />&nbsp;&nbsp;Graduated in 2024</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={MedalLogo} />&nbsp;&nbsp;High Honors (GPA 4.3/4.5)</div>
+                                <div className="skill-pill"><SkillIcon path={CalendarLogo} />&nbsp;&nbsp;Jan 2023 - Dec 2024</div>
+                                <div className="skill-pill"><SkillIcon path={GraduateLogo} />&nbsp;&nbsp;Graduated in 2024</div>
+                                <div className="skill-pill"><SkillIcon path={MedalLogo} />&nbsp;&nbsp;High Honors (GPA 4.3/4.5)</div>
                             </div>
 
                         </div>
@@ -955,8 +941,8 @@ const Home = () => {
                             </div>
 
                             <div className="row mt-2">
-                                <div className="frosted-glass skill-pill"><SkillIcon path={CalendarLogo} />&nbsp;&nbsp;Jan 2017 - Apr 2021</div>
-                                <div className="frosted-glass skill-pill"><SkillIcon path={GraduateLogo} />&nbsp;&nbsp;Graduated in 2021</div>
+                                <div className="skill-pill"><SkillIcon path={CalendarLogo} />&nbsp;&nbsp;Jan 2017 - Apr 2021</div>
+                                <div className="skill-pill"><SkillIcon path={GraduateLogo} />&nbsp;&nbsp;Graduated in 2021</div>
                             </div>
 
                         </div>
@@ -969,10 +955,8 @@ const Home = () => {
 
                     <div className='mt-5 row align-items-center justify-content-center text-content'>
 
-                        <div className='col-md-auto text-center'>
-                            <button type="button" className='frosted-glass theme-button neon-text' onClick={() => scrollToSection(mainContentRef)}>
-                                <FontAwesomeIcon icon={faArrowUp} />&nbsp;&nbsp;Go to Top
-                            </button>
+                        <div className='skill-pill neon-text' onClick={() => scrollToSection(mainContentRef)}>
+                            <FontAwesomeIcon icon={faArrowUp} />&nbsp;&nbsp;Go to Top
                         </div>
 
                     </div>
