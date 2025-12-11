@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const BottomNav = ({ path }) => {
 
@@ -6,6 +6,10 @@ const BottomNav = ({ path }) => {
         <img src={path} alt={path} style={{ height: '1rem' }} />
     );
 
+};
+
+BottomNav.propTypes = {
+    path: PropTypes.string.isRequired
 };
 
 export default BottomNav;

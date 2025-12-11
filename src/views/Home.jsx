@@ -1,51 +1,18 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import SkillIcon from '../components/SkillIcon';
 import BottomNav from '../components/BottomNav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import DownloadFile from '../contents/Dilshan_Liyanage_Resume.pdf';
 import { Link } from 'react-router-dom';
 import BgOne from "../assets/img/bg/abstract_01.jpg";
-import MeOne from "../assets/img/side-2.png";
 import MainLogo from '../assets/img/dila_logo.png';
 
-import ReactLogo from "../assets/img/skills/react-logo.png";
-import JSLogo from "../assets/img/skills/js-logo.png";
-import BootstrapLogo from "../assets/img/skills/bootstrap-logo.png";
-import JQueryLogo from "../assets/img/skills/jquery-logo.png";
-import HTML5Logo from "../assets/img/skills/html5-logo.png";
-import CCS3Logo from "../assets/img/skills/css3-logo.png";
-import JSONLogo from "../assets/img/skills/json-logo.png";
-import AJAXLogo from "../assets/img/skills/ajax-logo.png";
-import EJSLogo from "../assets/img/skills/ejs-logo.png";
-
-import NodeJSLogo from "../assets/img/skills/nodejs-logo.png";
-import RESTAPILogo from "../assets/img/skills/rest-api-logo.png";
-import SpringbootLogo from "../assets/img/skills/springboot-logo.png";
-import ExpressJSLogo from "../assets/img/skills/expressjs-logo.png";
-import JavaLogo from "../assets/img/skills/java-logo.png";
-import PHPLogo from "../assets/img/skills/php-logo.png";
-import NETCoreLogo from "../assets/img/skills/netcore-logo.png";
-
-import MongoDBLogo from "../assets/img/skills/mongodb-logo.png";
-import OracleXELogo from "../assets/img/skills/oraclexe-logo.png";
-import MySQLLogo from "../assets/img/skills/mysql-logo.png";
-import SQLServerLogo from "../assets/img/skills/sqlserver-logo.png";
-
-import JenkinsLogo from "../assets/img/skills/jenkins-logo.png";
-import DockerLogo from "../assets/img/skills/docker-logo.png";
-import AWSLogo from "../assets/img/skills/aws-logo.png";
-
-import GitLogo from "../assets/img/skills/git-logo.png";
-import BitBucketLogo from "../assets/img/skills/bitbucket-logo.png";
-
 import FigmaLogo from "../assets/img/skills/figma-logo.png";
-import PhotoshopLogo from "../assets/img/skills/photoshop-logo.png";
-import AfterEffectsLogo from "../assets/img/skills/aftereffects-logo.png";
-import XDLogo from "../assets/img/skills/adobexd-logo.png";
 
 import UdayaLogo from "../assets/img/experience/udaya_logo.png";
 import PearsonLogo from "../assets/img/experience/pearson_logo.png";
 import WimtachLogo from "../assets/img/experience/wimtach-logo.png";
+import TenzrHealthLogo from "../assets/img/experience/tenzrhealth_logo.png";
+import SeyonTaxLogo from "../assets/img/experience/seyontax_logo.png";
 
 import CentennialLogo from "../assets/img/education/centennial_logo.png";
 import UCSCLogo from "../assets/img/education/ucsc_logo.png";
@@ -56,8 +23,9 @@ import MedalLogo from "../assets/img/skills/medal-logo.png";
 import CalendarLogo from "../assets/img/skills/calendar-logo.png";
 import GraduateLogo from "../assets/img/skills/graduation-logo.png";
 
-import { faCloudArrowDown, faArrowUp, faPaperPlane, faCircle } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faArrowUp, faCircle } from '@fortawesome/free-solid-svg-icons';
+import NameCard from '../components/NameCard';
+import SkillsCard from '../components/SkillsCard';
 
 const Home = () => {
 
@@ -95,13 +63,6 @@ const Home = () => {
         };
     }, []);
 
-    const downloadResume = () => {
-        const link = document.createElement('a');
-        link.href = DownloadFile;
-        link.download = 'Dilshan_Liyanage_Resume.pdf';
-        link.click();
-    };
-
     const scrollToSection = (ref) => {
         ref.current.scrollIntoView({ behavior: 'smooth' });
     };
@@ -111,6 +72,7 @@ const Home = () => {
         <>
 
             <nav className="navbar navbar-expand-lg fixed-top frosted-glass nav-container">
+
                 <div className="container-fluid justify-content-lg-center">
 
                     <Link className={`navbar-brand`}>
@@ -129,7 +91,7 @@ const Home = () => {
                                 type="button"
                                 className="nav-link raleway-light" style={{ color: "#fff" }}
                                 onClick={() => scrollToSection(mainContentRef)}>
-                                Home
+                                About Me
                             </button>
 
                             <button
@@ -162,7 +124,9 @@ const Home = () => {
 
                         </ul>
                     </div>
+
                 </div>
+
             </nav>
 
             <div ref={mainContentRef} id="main_content"></div>
@@ -173,62 +137,7 @@ const Home = () => {
 
                     <div className="frosted-glass br-20">
 
-                        <div className="content-wrapper">
-
-                            <p className="fs-4 raleway-light">Hey There! My name is</p>
-
-                            <p className="display-3 mt-1 neon-text">DILSHAN LIYANAGE</p>
-
-                            <a className="mt-3" style={{ textDecoration: 'none' }}>
-                                <img src={MeOne} alt={MeOne} style={{ width: '12rem' }} />
-                            </a>
-
-                            <p className="fs-1 mt-4 neon-text"> WEB DEVELOPER &amp; UI/UX DESIGNER</p>
-
-                            <p className="fs-5 raleway-light">...and occasionally, a photographer &amp; graphic designer!</p>
-
-                            <div className='mt-4 row align-items-center justify-content-center text-content'>
-
-                                <Link
-                                    style={{ textDecoration: "none" }}
-                                    type="button"
-                                    className="skill-pill"
-                                    to="https://www.linkedin.com/in/dilaliyanage/"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faLinkedin} style={{ color: "#78bbff" }} />&nbsp;&nbsp;LinkedIn
-                                </Link>
-
-                                <Link
-                                    style={{ textDecoration: "none" }}
-                                    type="button"
-                                    className="skill-pill"
-                                    to="https://github.com/dilshanliyanage1000/"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faGithub} style={{ color: "#bebaff" }} />&nbsp;&nbsp;GitHub
-                                </Link>
-
-                                <Link
-                                    style={{ textDecoration: "none" }}
-                                    type="button"
-                                    className="skill-pill"
-                                    to="mailto:dilshanliyanage@gmail.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={faPaperPlane} style={{ color: "#f5da62" }} />&nbsp;&nbsp;Email
-                                </Link>
-
-                                <Link style={{ textDecoration: "none" }}
-                                    type="button"
-                                    className="skill-pill"
-                                    onClick={downloadResume}>
-                                    <FontAwesomeIcon icon={faCloudArrowDown} style={{ color: "#8bbbc7" }} />&nbsp;&nbsp;Resume
-                                </Link>
-
-                            </div>
-
-                        </div>
+                        <NameCard />
 
                     </div>
 
@@ -244,81 +153,7 @@ const Home = () => {
 
                     <div className="mt-3 frosted-glass br-20">
 
-                        <div className="content-wrapper text-start">
-
-                            <p className="fs-6 raleway-regular">Front-End Technologies</p>
-
-                            <div className="row low-margin">
-
-                                <div className="skill-pill"><SkillIcon path={ReactLogo} />&nbsp;&nbsp;React</div>
-                                <div className="skill-pill"><SkillIcon path={JSLogo} />&nbsp;&nbsp;JavaScript</div>
-                                <div className="skill-pill"><SkillIcon path={BootstrapLogo} />&nbsp;&nbsp;Bootstrap</div>
-                                <div className="skill-pill"><SkillIcon path={JQueryLogo} />&nbsp;&nbsp;jQuery</div>
-                                <div className="skill-pill"><SkillIcon path={HTML5Logo} />&nbsp;&nbsp;HTML</div>
-                                <div className="skill-pill"><SkillIcon path={CCS3Logo} />&nbsp;&nbsp;CSS</div>
-                                <div className="skill-pill"><SkillIcon path={JSONLogo} />&nbsp;&nbsp;JSON</div>
-                                <div className="skill-pill"><SkillIcon path={EJSLogo} />&nbsp;&nbsp;EJS</div>
-                                <div className="skill-pill"><SkillIcon path={AJAXLogo} />&nbsp;&nbsp;AJAX</div>
-
-                            </div>
-
-                            <p className="mt-4 fs-6 raleway-regular">Back-End Technologies</p>
-
-                            <div className="row low-margin">
-
-                                <div className="skill-pill"><SkillIcon path={NodeJSLogo} />&nbsp;&nbsp;Node.js</div>
-                                <div className="skill-pill"><SkillIcon path={RESTAPILogo} />&nbsp;&nbsp;REST API</div>
-                                <div className="skill-pill"><SkillIcon path={SpringbootLogo} />&nbsp;&nbsp;SpringBoot</div>
-                                <div className="skill-pill"><SkillIcon path={ExpressJSLogo} />&nbsp;&nbsp;Express</div>
-                                <div className="skill-pill"><SkillIcon path={JavaLogo} />&nbsp;&nbsp;Java</div>
-                                <div className="skill-pill"><SkillIcon path={PHPLogo} />&nbsp;&nbsp;PHP</div>
-                                <div className="skill-pill"><SkillIcon path={NETCoreLogo} />&nbsp;&nbsp;ASP .NET Core</div>
-
-                            </div>
-
-                            <p className="mt-4 fs-6 raleway-regular">Database Management</p>
-
-                            <div className="row low-margin">
-
-                                <div className="skill-pill"><SkillIcon path={MongoDBLogo} />&nbsp;&nbsp;MongoDB</div>
-                                <div className="skill-pill"><SkillIcon path={OracleXELogo} />&nbsp;&nbsp;Oracle Xe</div>
-                                <div className="skill-pill"><SkillIcon path={MySQLLogo} />&nbsp;&nbsp;MySQL</div>
-                                <div className="skill-pill"><SkillIcon path={SQLServerLogo} />&nbsp;&nbsp;Microsoft SQL Server</div>
-
-                            </div>
-
-                            <p className="mt-4 fs-6 raleway-regular">CI/CD & Cloud Services</p>
-
-                            <div className="row low-margin">
-
-                                <div className="skill-pill"><SkillIcon path={JenkinsLogo} />&nbsp;&nbsp;Jenkins</div>
-                                <div className="skill-pill"><SkillIcon path={DockerLogo} />&nbsp;&nbsp;Docker</div>
-                                <div className="skill-pill"><SkillIcon path={AWSLogo} />&nbsp;&nbsp;Amazon Web Services (AWS)</div>
-
-                            </div>
-
-                            <p className="mt-4 fs-6 raleway-regular">Version Control</p>
-
-                            <div className="row low-margin">
-
-                                <div className="skill-pill"><FontAwesomeIcon icon={faGithub} style={{ color: "#bebaff" }} />&nbsp;&nbsp;GitHub</div>
-                                <div className="skill-pill"><SkillIcon path={GitLogo} />&nbsp;&nbsp;GIT</div>
-                                <div className="skill-pill"><SkillIcon path={BitBucketLogo} />&nbsp;&nbsp;BitBucket</div>
-
-                            </div>
-
-                            <p className="mt-4 fs-6 raleway-regular">UI/UX Designing &amp; Multimedia</p>
-
-                            <div className="row">
-
-                                <div className="skill-pill"><SkillIcon path={FigmaLogo} />&nbsp;&nbsp;Figma</div>
-                                <div className="skill-pill"><SkillIcon path={PhotoshopLogo} />&nbsp;&nbsp;Adobe Photoshop</div>
-                                <div className="skill-pill"><SkillIcon path={AfterEffectsLogo} />&nbsp;&nbsp;Adobe After Effects</div>
-                                <div className="skill-pill"><SkillIcon path={XDLogo} />&nbsp;&nbsp;Adobe xD</div>
-
-                            </div>
-
-                        </div>
+                        <SkillsCard />
 
                     </div>
 
@@ -339,12 +174,12 @@ const Home = () => {
                             <div className="row">
 
                                 <div className="col-md-1 exp-col">
-                                    <img className="exp-icon" src={WimtachLogo} alt={WimtachLogo} style={{ width: "4rem" }} />
+                                    <img className="exp-icon" src={WimtachLogo} alt={WimtachLogo} />
                                 </div>
 
                                 <div className="col-md-11">
 
-                                    <p className="fs-5 raleway-semibold">Student Researcher – UI/UX Designer </p>
+                                    <p className="fs-5 raleway-semibold">UI/UX Designer </p>
 
                                     <p className="fs-6 raleway-light low-margin-m">
                                         <Link className="remove-link" to={"https://wimtach.centennialcollege.ca/"} target="_blank">
@@ -361,30 +196,188 @@ const Home = () => {
                             </div>
 
                             <div className="mt-4 raleway-light fs-6">
+                                Focused on UI/UX design and prototyping with Figma while working on multiple clients/projects simultaneously, supporting front end development to enhance user interfaces, and overall functionality
+                            </div>
 
-                                Focused on UI/UX design and prototyping with Figma while working on multiple projects simultaneously, supporting front-end development to enhance user interfaces and overall functionality
+                            <div className="accordion mt-4" id="tenzrAccordian">
 
-                                <ul className="personal-tile mt-3">
+                                <div className="accordion-item frosted-glass-mid br-20" style={{ border: "none" }}>
 
-                                    <li className="mb-small">
-                                        Designed and prototyped user interfaces using Figma to create engaging and intuitive digital experiences
-                                    </li>
+                                    <h2 className="accordion-header" style={{ border: "none" }}>
 
-                                    <li className="mb-small">
-                                        Collaborated with the development team to assist in front-end development, ensuring seamless integration of design and functionality
-                                    </li>
+                                        <button
+                                            className="accordion-button"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#tenzrCollapse"
+                                            aria-expanded="false"
+                                            style={{
+                                                background: "transparent",
+                                                boxShadow: "none",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                gap: "12px"
+                                            }}
+                                        >
 
-                                    <li className="mb-small">
-                                        Conducted user research and testing to optimize UI/UX strategies based on feedback
-                                    </li>
+                                            <img
+                                                className="exp-icon"
+                                                src={TenzrHealthLogo}
+                                                alt={TenzrHealthLogo}
+                                                style={{ width: "2.5rem" }}
+                                            />
 
-                                    <li className="mb-small">
-                                        Successfully balanced competing project priorities, delivering high-quality outcomes across multiple initiatives
-                                    </li>
+                                            <p className="remove-link fs-5 raleway-semibold" style={{ margin: 0 }}>Tenzr Health</p>
 
-                                </ul>
+                                        </button>
+
+                                    </h2>
+
+                                    <div
+                                        id="tenzrCollapse"
+                                        className="accordion-collapse collapse"
+                                        data-bs-parent="#tenzrAccordian"
+                                        style={{ border: "none" }}
+                                    >
+
+                                        <div
+                                            className="accordion-body text-start"
+                                            style={{ background: "transparent", border: "none" }}
+                                        >
+                                            <ul className='text-start raleway-light fs-6'>
+
+                                                <li className="mb-small">
+                                                    Collaborated with Tenzr Health, a digital health company based in British Columbia, to improve the web and mobile interface of their rehabilitation platform
+                                                </li>
+
+                                                <li className="mb-small">
+                                                    Designed responsive and clinician friendly UI components for key modules, simplifying complex rehabilitation workflows for both clinicians and patients
+                                                </li>
+
+                                                <li className="mb-small">
+                                                    Developed user centered UX flows and high fidelity UI for a new print preview interface created from the ground up to address a missing capability within the platform
+                                                </li>
+
+                                                <li className="mb-small">
+                                                    Designed and iterated web and mobile components based on feedback from clinicians, the UI lead, the product manager, and the customer success team, ensuring alignment with real workflow needs
+                                                </li>
+
+                                                <li className="mb-small">
+                                                    Conducted usability focused refinements to improve clarity, navigation, and workflow efficiency across both desktop and mobile views
+                                                </li>
+
+                                                <li className="mb-small">
+                                                    Documented UI patterns and interaction rules to ensure consistent implementation across the product and support smoother developer handoff
+                                                </li>
+
+                                            </ul>
+
+                                            <Link
+                                                style={{ textDecoration: "none" }}
+                                                type="button"
+                                                className="skill-pill"
+                                                to="https://www.tenzrhealth.com/"
+                                                target="_blank"
+                                                rel="noopener noreferrer">
+                                                <SkillIcon path={GlobeIcon} />&nbsp;&nbsp;Tenzr Health Website
+                                            </Link>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
 
                             </div>
+
+
+                            <div className="accordion mt-4" id="seyontaxAccordion">
+
+                                <div className="accordion-item frosted-glass-mid br-20" style={{ border: "none" }}>
+
+                                    <h2 className="accordion-header" style={{ border: "none" }}>
+
+                                        <button
+                                            className="accordion-button"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#seyonCollapse"
+                                            aria-expanded="false"
+                                            style={{
+                                                background: "transparent",
+                                                boxShadow: "none",
+                                                display: "flex",
+                                                alignItems: "center",
+                                                gap: "12px"
+                                            }}
+                                        >
+
+                                            <img
+                                                className="exp-icon"
+                                                src={SeyonTaxLogo}
+                                                alt={SeyonTaxLogo}
+                                                style={{ width: "2.5rem" }}
+                                            />
+
+                                            <p className="remove-link fs-5 raleway-semibold" style={{ margin: 0 }}>SeyonTax</p>
+
+                                        </button>
+
+                                    </h2>
+
+                                    <div
+                                        id="seyonCollapse"
+                                        className="accordion-collapse collapse"
+                                        data-bs-parent="#seyontaxAccordion"
+                                        style={{ border: "none" }}
+                                    >
+
+                                        <div
+                                            className="accordion-body text-start"
+                                            style={{ background: "transparent", border: "none" }}
+                                        >
+                                            <ul className='text-start raleway-light fs-6'>
+
+                                                <li className="mb-small">
+                                                    Designed modern, organized UI layouts for online tax filing and financial service workflows
+                                                </li>
+
+                                                <li className="mb-small">
+                                                    Created wireframes, user flows, and prototypes that simplified document collection, form completion, and task progress tracking
+                                                </li>
+
+                                                <li className="mb-small">
+                                                    Improved clarity and usability for both desktop and mobile interfaces, focusing on error handling and reducing user friction
+                                                </li>
+
+                                                <li className="mb-small">
+                                                    Collaborated with developers to ensure accurate implementation of interaction details and responsive behavior
+                                                </li>
+
+                                                <li className="mb-small">
+                                                    Contributed to the development of a consistent design system shared across the tax filing modules
+                                                </li>
+
+                                            </ul>
+
+                                            <Link
+                                                style={{ textDecoration: "none" }}
+                                                type="button"
+                                                className="skill-pill"
+                                                to="https://seyontax.ca/"
+                                                target="_blank"
+                                                rel="noopener noreferrer">
+                                                <SkillIcon path={GlobeIcon} />&nbsp;&nbsp;SeyonTax Website
+                                            </Link>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
 
                         </div>
 
@@ -397,7 +390,7 @@ const Home = () => {
                             <div className="row">
 
                                 <div className="col-md-1 exp-col">
-                                    <img className="exp-icon" src={PearsonLogo} alt={PearsonLogo} style={{ width: "4rem" }} />
+                                    <img className="exp-icon" src={PearsonLogo} alt={PearsonLogo} />
                                 </div>
 
                                 <div className="col-md-11">
@@ -420,12 +413,12 @@ const Home = () => {
 
                             <div className="mt-4 raleway-light fs-6">
 
-                                Contributed to the development, testing, and enhancement of educational products under the K-12 Division, ensuring engaging and seamless user experiences for teachers and students across Canada
+                                Contributed to the development, testing, and enhancement of educational products under the K-12 Division, ensuring engaging and seamless user experiences for over 10000 teachers and students across Canada
 
                                 <ul className="personal-tile mt-3">
 
                                     <li className="mb-small">
-                                        Evaluated educational products to ensure a seamless, error-free experience for users
+                                        Evaluated educational products to ensure a seamless, error-free experience for users, reducing reported issues by 30%.
                                     </li>
 
                                     <li className="mb-small">
@@ -433,7 +426,7 @@ const Home = () => {
                                     </li>
 
                                     <li className="mb-small">
-                                        Enhanced user experience by developing and integrating responsive web components
+                                        Enhanced user experience by developing and integrating responsive web components using Vue.js
                                     </li>
 
                                     <li className="mb-small">
@@ -444,6 +437,10 @@ const Home = () => {
                                         Created engaging animations using Adobe After Effects to simplify concepts for children
                                     </li>
 
+                                    <li className="mb-small">
+                                        Collaborated with cross functional teams and presented UX findings to support product decisions and align improvements with business needs
+                                    </li>
+
                                 </ul>
 
                             </div>
@@ -452,14 +449,14 @@ const Home = () => {
 
                     </div>
 
-                    <div className="mt-3 frosted-glass br-20 jumbotron">
+                    <div className="mt-3 frosted-glass br-20">
 
                         <div className="content-wrapper text-start">
 
                             <div className="row">
 
                                 <div className="col-md-1 exp-col">
-                                    <img className="exp-icon" src={UdayaLogo} alt={UdayaLogo} style={{ width: "4rem" }} />
+                                    <img className="exp-icon" src={UdayaLogo} alt={UdayaLogo} />
                                 </div>
 
                                 <div className="col-md-11">
@@ -485,15 +482,15 @@ const Home = () => {
                                 <ul className="personal-tile mt-3">
 
                                     <li className="mb-small">
-                                        Developed and implemented a fully functional web-based quotations management system for agricultural machinery
+                                        Developed and implemented a fully functional web-based quotations management system for agricultural machinery, reducing quotation processing time by 50%
                                     </li>
 
                                     <li className="mb-small">
-                                        Analyzed and maintained the existing ERP system, collaborating with stakeholders to gather requirements and report progress to the senior team
+                                        Analyzed and maintained the existing ERP system, collaborating with stakeholders to gather requirements and communicate design and technical needs
                                     </li>
 
                                     <li className="mb-small">
-                                        Collected and visualized sales data to assist senior management in decision-making.
+                                        Collected and visualized sales data to assist senior management in decision-making, increasing data driven insights and enabling 10% more accurate forecasting
                                     </li>
 
                                 </ul>

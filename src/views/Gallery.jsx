@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import MainNav from '../components/MainNav';
 import BottomNav from '../components/BottomNav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
