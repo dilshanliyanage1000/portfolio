@@ -13,17 +13,17 @@ import CCS3Logo from "../assets/img/skills/css3-logo.png";
 // import EJSLogo from "../assets/img/skills/ejs-logo.png";
 
 import NodeJSLogo from "../assets/img/skills/nodejs-logo.png";
-import RESTAPILogo from "../assets/img/skills/rest-api-logo.png";
-import SpringbootLogo from "../assets/img/skills/springboot-logo.png";
-import ExpressJSLogo from "../assets/img/skills/expressjs-logo.png";
-import JavaLogo from "../assets/img/skills/java-logo.png";
+// import RESTAPILogo from "../assets/img/skills/rest-api-logo.png";
+// import SpringbootLogo from "../assets/img/skills/springboot-logo.png";
+// import ExpressJSLogo from "../assets/img/skills/expressjs-logo.png";
+// import JavaLogo from "../assets/img/skills/java-logo.png";
 import PHPLogo from "../assets/img/skills/php-logo.png";
-import NETCoreLogo from "../assets/img/skills/netcore-logo.png";
+// import NETCoreLogo from "../assets/img/skills/netcore-logo.png";
 
 import MongoDBLogo from "../assets/img/skills/mongodb-logo.png";
 import OracleXELogo from "../assets/img/skills/oraclexe-logo.png";
-import MySQLLogo from "../assets/img/skills/mysql-logo.png";
-import SQLServerLogo from "../assets/img/skills/sqlserver-logo.png";
+// import MySQLLogo from "../assets/img/skills/mysql-logo.png";
+// import SQLServerLogo from "../assets/img/skills/sqlserver-logo.png";
 
 // import JenkinsLogo from "../assets/img/skills/jenkins-logo.png";
 // import DockerLogo from "../assets/img/skills/docker-logo.png";
@@ -33,9 +33,10 @@ import GitLogo from "../assets/img/skills/git-logo.png";
 import BitBucketLogo from "../assets/img/skills/bitbucket-logo.png";
 
 import FigmaLogo from "../assets/img/skills/figma-logo.png";
+import XDLogo from "../assets/img/skills/adobexd-logo.png";
+import SketchLogo from "../assets/img/skills/sketch-logo.png";
 import PhotoshopLogo from "../assets/img/skills/photoshop-logo.png";
 import AfterEffectsLogo from "../assets/img/skills/aftereffects-logo.png";
-import XDLogo from "../assets/img/skills/adobexd-logo.png";
 
 const SkillsCard = () => {
 
@@ -48,13 +49,14 @@ const SkillsCard = () => {
             <div className="row">
 
                 <div className="skill-pill"><SkillIcon path={FigmaLogo} />&nbsp;&nbsp;Figma</div>
+                <div className="skill-pill"><SkillIcon path={XDLogo} />&nbsp;&nbsp;Adobe xD</div>
+                <div className="skill-pill"><SkillIcon path={SketchLogo} />&nbsp;&nbsp;Sketch</div>
                 <div className="skill-pill"><SkillIcon path={PhotoshopLogo} />&nbsp;&nbsp;Adobe Photoshop</div>
                 <div className="skill-pill"><SkillIcon path={AfterEffectsLogo} />&nbsp;&nbsp;Adobe After Effects</div>
-                <div className="skill-pill"><SkillIcon path={XDLogo} />&nbsp;&nbsp;Adobe xD</div>
 
             </div>
 
-            <p className="mt-4 fs-6 raleway-regular">Front-End Technologies</p>
+            <p className="mt-4 fs-6 raleway-regular">Web Development Technologies</p>
 
             <div className="row">
 
@@ -63,6 +65,10 @@ const SkillsCard = () => {
                 <div className="skill-pill"><SkillIcon path={CCS3Logo} />&nbsp;&nbsp;CSS</div>
                 <div className="skill-pill"><SkillIcon path={JSLogo} />&nbsp;&nbsp;JavaScript</div>
                 <div className="skill-pill"><SkillIcon path={BootstrapLogo} />&nbsp;&nbsp;Bootstrap</div>
+                <div className="skill-pill"><SkillIcon path={NodeJSLogo} />&nbsp;&nbsp;Node.js</div>
+                <div className="skill-pill"><SkillIcon path={PHPLogo} />&nbsp;&nbsp;PHP</div>
+                <div className="skill-pill"><SkillIcon path={MongoDBLogo} />&nbsp;&nbsp;MongoDB</div>
+                <div className="skill-pill"><SkillIcon path={OracleXELogo} />&nbsp;&nbsp;Oracle Xe</div>
                 {/* <div className="skill-pill"><SkillIcon path={JQueryLogo} />&nbsp;&nbsp;jQuery</div> 
                 <div className="skill-pill"><SkillIcon path={JSONLogo} />&nbsp;&nbsp;JSON</div>
                 <div className="skill-pill"><SkillIcon path={EJSLogo} />&nbsp;&nbsp;EJS</div>
@@ -70,7 +76,7 @@ const SkillsCard = () => {
 
             </div>
 
-            <p className="mt-4 fs-6 raleway-regular">Back-End Technologies</p>
+            {/* <p className="mt-4 fs-6 raleway-regular">Back-End Technologies</p>
 
             <div className="row">
 
@@ -82,9 +88,9 @@ const SkillsCard = () => {
                 <div className="skill-pill"><SkillIcon path={PHPLogo} />&nbsp;&nbsp;PHP</div>
                 <div className="skill-pill"><SkillIcon path={NETCoreLogo} />&nbsp;&nbsp;ASP .NET Core</div>
 
-            </div>
+            </div> */}
 
-            <p className="mt-4 fs-6 raleway-regular">Database Management</p>
+            {/* <p className="mt-4 fs-6 raleway-regular">Database Management</p>
 
             <div className="row">
 
@@ -93,7 +99,7 @@ const SkillsCard = () => {
                 <div className="skill-pill"><SkillIcon path={MySQLLogo} />&nbsp;&nbsp;MySQL</div>
                 <div className="skill-pill"><SkillIcon path={SQLServerLogo} />&nbsp;&nbsp;Microsoft SQL Server</div>
 
-            </div>
+            </div> */}
 
             {/* <p className="mt-4 fs-6 raleway-regular">CI/CD & Cloud Services</p>
 

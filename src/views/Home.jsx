@@ -32,7 +32,8 @@ const Home = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const skillsRef = useRef(null);
-    const projectsRef = useRef(null);
+    const devProjectsRef = useRef(null);
+    const uxProjectsRef = useRef(null);
     const experienceRef = useRef(null);
     const educationRef = useRef(null);
     const mainContentRef = useRef(null);
@@ -111,8 +112,15 @@ const Home = () => {
                             <button
                                 type="button"
                                 className="nav-link raleway-light" style={{ color: "#fff" }}
-                                onClick={() => scrollToSection(projectsRef)}>
-                                Projects
+                                onClick={() => scrollToSection(uxProjectsRef)}>
+                                UX Projects
+                            </button>
+
+                            <button
+                                type="button"
+                                className="nav-link raleway-light" style={{ color: "#fff" }}
+                                onClick={() => scrollToSection(devProjectsRef)}>
+                                Dev Projects
                             </button>
 
                             <button
@@ -503,12 +511,14 @@ const Home = () => {
 
                 </main>
 
-                <div ref={projectsRef} id="projects"> </div>
+                {/* UX PROJECTS SECTION */}
+
+                <div ref={uxProjectsRef} id="projects"> </div>
 
                 <main className="custom-container mt-5" style={{ textAlign: windowWidth < 768 ? 'center' : 'left' }}>
 
                     <div className="text-center">
-                        <p className="mt-5 fs-1 neon-text text-center text-white custom-underline">PROJECTS</p>
+                        <p className="mt-5 fs-1 neon-text text-center text-white custom-underline">UX PROJECTS</p>
                     </div>
 
                     <div className="row">
@@ -522,7 +532,109 @@ const Home = () => {
                                     <div className="row">
 
                                         <div className="project-card">
-                                            <p className="fs-6 raleway-semibold"><FontAwesomeIcon icon={faCircle} style={{ color: "#59e33d" }} />&nbsp;&nbsp;WIMTACH <span className="raleway-light">| Website Redesign</span></p>
+                                            <p className="fs-6 raleway-semibold"><FontAwesomeIcon icon={faCircle} style={{ color: "#21a0eb" }} /> <FontAwesomeIcon icon={faCircle} style={{ color: "#fee56c", marginLeft: "-10px" }} />&nbsp;&nbsp;Digital Rehabilitation Platform <span className="raleway-light">| Tenzr Health</span></p>
+                                            <div className="tooltip-text raleway-semibold">Solo Project</div>
+                                        </div>
+
+                                        <div className="mb-3 raleway-light fs-6">
+                                            Worked with product and design teams at Tenzr Health to enhance therapist and patient experiences across web and mobile. Designed a new print preview feature from concept to UI, refined components through clinician feedback, created reusable patterns for consistency, and improved workflows by addressing edge cases and usability gaps.
+                                        </div>
+
+                                        <div className="mb-3 raleway-thin fs-7">
+                                            Note: Design assets are confidential due to NDA. Sanitized UI samples available upon request.
+                                        </div>
+
+                                        <Link
+                                            style={{ textDecoration: "none" }}
+                                            type="button"
+                                            className="skill-pill"
+                                            to="https://www.tenzrhealth.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                            <SkillIcon path={GlobeIcon} />&nbsp;&nbsp;Website
+                                        </Link>
+
+                                        <Link
+                                            style={{ textDecoration: "none" }}
+                                            type="button"
+                                            className="skill-pill"
+                                            to="https://app.dev.tenzrhealth.com/login"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                            <SkillIcon path={GlobeIcon} />&nbsp;&nbsp;Platform App
+                                        </Link>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div className="col-md-6">
+
+                            <div className="mt-3 frosted-glass br-20">
+
+                                <div className="content-wrapper text-start">
+
+                                    <div className="row">
+
+                                        <div className="project-card">
+                                            <p className="fs-6 raleway-semibold"><FontAwesomeIcon icon={faCircle} style={{ color: "#59e33d" }} />&nbsp;&nbsp;Payroll Client <span className="raleway-light">| SeyonTax</span></p>
+                                            <div className="tooltip-text raleway-semibold">Solo Project</div>
+                                        </div>
+
+                                        <div className="mb-3 raleway-light fs-6">
+                                            Designed the payroll and tax platform from the ground up, defining UI architecture, workflows, and a shared design system. Created wireframes and prototypes that streamlined document submission, form completion, and progress tracking, while improving usability across desktop and mobile through clear interactions and reduced friction.
+                                        </div>
+
+                                        <div className="mb-3 raleway-thin fs-7">
+                                            Note: Design assets are confidential due to NDA. Sanitized UI samples available below.
+                                        </div>
+
+                                        <Link
+                                            style={{ textDecoration: "none" }}
+                                            type="button"
+                                            className="skill-pill"
+                                            to="https://seyontax.ca/"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                            <SkillIcon path={GlobeIcon} />&nbsp;&nbsp;Website
+                                        </Link>
+
+                                        <Link
+                                            style={{ textDecoration: "none" }}
+                                            type="button"
+                                            className="skill-pill"
+                                            to="https://www.figma.com/design/fBJYhatD5G3lzTktsDhUU9/Payroll-%7C-Sanitized-for-view?node-id=0-1&t=YN1E0yPlR7ECZIQa-1"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                            <SkillIcon path={FigmaLogo} />&nbsp;&nbsp;UI Design
+                                        </Link>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div className="row">
+
+                        <div className="col-md-6">
+
+                            <div className="mt-3 frosted-glass br-20">
+
+                                <div className="content-wrapper text-start">
+
+                                    <div className="row">
+
+                                        <div className="project-card">
+                                            <p className="fs-6 raleway-semibold"><FontAwesomeIcon icon={faCircle} style={{ color: "#59e33d" }} />&nbsp;&nbsp;Website Revamp <span className="raleway-light">| WIMTACH</span></p>
                                             <div className="tooltip-text raleway-semibold">Solo Project</div>
                                         </div>
 
@@ -547,7 +659,7 @@ const Home = () => {
                                             to="https://www.figma.com/design/7w2rsR4ZqMs1GKHPIDUXHl/WIMTACH-Website?node-id=0-1&p=f&t=jxJtU9vCSyhERTdy-0"
                                             target="_blank"
                                             rel="noopener noreferrer">
-                                            <SkillIcon path={FigmaLogo} />&nbsp;&nbsp;UI/UX Design
+                                            <SkillIcon path={FigmaLogo} />&nbsp;&nbsp;UI Design
                                         </Link>
 
                                     </div>
@@ -557,6 +669,151 @@ const Home = () => {
                             </div>
 
                         </div>
+
+                        <div className="col-md-6">
+
+                            <div className="mt-3 frosted-glass br-20">
+
+                                <div className="content-wrapper text-start">
+
+                                    <div className="row">
+
+                                        <div className="project-card">
+                                            <p className="fs-6 raleway-semibold"><FontAwesomeIcon icon={faCircle} style={{ color: "#59e33d" }} />&nbsp;&nbsp;Website Tweaks <span className="raleway-light">| Dolce & Gourmando </span></p>
+                                            <div className="tooltip-text raleway-semibold">Solo Project</div>
+                                        </div>
+
+                                        <div className="mb-3 raleway-light fs-6">
+                                            Collaborated with the client to redesign, prototype, and enhance their website, focusing on usability and brand alignment.
+                                        </div>
+
+                                        <Link
+                                            style={{ textDecoration: "none" }}
+                                            type="button"
+                                            className="skill-pill"
+                                            to="https://dolcegourmando.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                            <SkillIcon path={GlobeIcon} />&nbsp;&nbsp;Website
+                                        </Link>
+
+                                        <Link
+                                            style={{ textDecoration: "none" }}
+                                            type="button"
+                                            className="skill-pill"
+                                            to="https://www.figma.com/design/UyDK0A795CFVsY7DOsytO7/Dolce-Gourmando-(Client)?t=PDwoPB7cRLIo2tIF-0"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                            <SkillIcon path={FigmaLogo} />&nbsp;&nbsp;UI Design
+                                        </Link>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div className="row">
+
+                        <div className="col-md-6">
+
+                            <div className="mt-3 frosted-glass br-20">
+
+                                <div className="content-wrapper text-start">
+
+                                    <div className="row">
+
+                                        <div className="project-card">
+                                            <p className="fs-6 raleway-semibold"><FontAwesomeIcon icon={faCircle} style={{ color: "#59e33d" }} />&nbsp;&nbsp;Untitled Towing Agent <span className="raleway-light">| Undisclosed Client</span></p>
+                                            <div className="tooltip-text raleway-semibold">Solo Project</div>
+                                        </div>
+
+                                        <div className="mb-3 raleway-light fs-6">
+                                            Designed a dispatch and operations dashboard for an undisclosed towing service, focused on real time job tracking, driver coordination, and performance insights.
+                                        </div>
+
+                                        <Link
+                                            style={{ textDecoration: "none" }}
+                                            type="button"
+                                            className="skill-pill"
+                                            to="https://www.figma.com/design/5rxk7Krcww91fikaCwS1g4/Undisclosed-Towing-Agent-%7C-Sanitized-for-view--Copy-?node-id=0-1&t=KhhZH2mBXMUmhG7D-1"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                            <SkillIcon path={FigmaLogo} />&nbsp;&nbsp;UI Design
+                                        </Link>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div className="col-md-6">
+
+                            <div className="mt-3 frosted-glass br-20">
+
+                                <div className="content-wrapper text-start">
+
+                                    <div className="row">
+
+                                        <div className="project-card">
+                                            <p className="fs-6 raleway-semibold"><FontAwesomeIcon icon={faCircle} style={{ color: "#21a0eb" }} /> <FontAwesomeIcon icon={faCircle} style={{ color: "#fee56c", marginLeft: "-10px" }} />&nbsp;&nbsp;SimplyOrganic <span className="raleway-light">| Grocery Ordering Application</span></p>
+                                            <div className="tooltip-text raleway-semibold">Collaborative Project</div>
+                                        </div>
+
+                                        <div className="mb-3 raleway-light fs-6">
+                                            Wireframed a user-friendly online grocery ordering platform that allows customers to easily browse, search, and purchase groceries
+                                        </div>
+
+                                        <Link
+                                            style={{ textDecoration: "none" }}
+                                            type="button"
+                                            className="skill-pill"
+                                            to="https://simply-organic-frontend.onrender.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                            <SkillIcon path={GlobeIcon} />&nbsp;&nbsp;Live Site
+                                        </Link>
+
+                                        <Link
+                                            style={{ textDecoration: "none" }}
+                                            type="button"
+                                            className="skill-pill"
+                                            to="https://www.figma.com/design/zq7gFJaE0GQ82HeXqBH1HR/GroceryDeliveryApplication?node-id=0-1&t=YE21fAhp4TZZdfWL-1"
+                                            target="_blank"
+                                            rel="noopener noreferrer">
+                                            <SkillIcon path={FigmaLogo} />&nbsp;&nbsp;Wireframes
+                                        </Link>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </main>
+
+                {/* DEV PROJECTS SECTION */}
+
+                <div ref={devProjectsRef} id="projects"> </div>
+
+                <main className="custom-container mt-5" style={{ textAlign: windowWidth < 768 ? 'center' : 'left' }}>
+
+                    <div className="text-center">
+                        <p className="mt-5 fs-1 neon-text text-center text-white custom-underline">DEV PROJECTS</p>
+                    </div>
+
+                    <div className="row">
 
                         <div className="col-md-6">
 
@@ -603,10 +860,6 @@ const Home = () => {
 
                         </div>
 
-                    </div>
-
-                    <div className="row">
-
                         <div className="col-md-6">
 
                             <div className="mt-3 frosted-glass br-20">
@@ -632,51 +885,6 @@ const Home = () => {
                                             target="_blank"
                                             rel="noopener noreferrer">
                                             <SkillIcon path={LinkIcon} />&nbsp;&nbsp;GitHub
-                                        </Link>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div className="col-md-6">
-
-                            <div className="mt-3 frosted-glass br-20">
-
-                                <div className="content-wrapper text-start">
-
-                                    <div className="row">
-
-                                        <div className="project-card">
-                                            <p className="fs-6 raleway-semibold"><FontAwesomeIcon icon={faCircle} style={{ color: "#59e33d" }} />&nbsp;&nbsp;Dolce & Gourmando <span className="raleway-light">| Website Redesign</span></p>
-                                            <div className="tooltip-text raleway-semibold">Solo Project</div>
-                                        </div>
-
-                                        <div className="mb-3 raleway-light fs-6">
-                                            Collaborated with the client to redesign, prototype, and enhance their website, focusing on usability and brand alignment.
-                                        </div>
-
-                                        <Link
-                                            style={{ textDecoration: "none" }}
-                                            type="button"
-                                            className="skill-pill"
-                                            to="https://dolcegourmando.com/"
-                                            target="_blank"
-                                            rel="noopener noreferrer">
-                                            <SkillIcon path={GlobeIcon} />&nbsp;&nbsp;Website
-                                        </Link>
-
-                                        <Link
-                                            style={{ textDecoration: "none" }}
-                                            type="button"
-                                            className="skill-pill"
-                                            to="https://www.figma.com/design/UyDK0A795CFVsY7DOsytO7/Dolce-Gourmando-(Client)?t=PDwoPB7cRLIo2tIF-0"
-                                            target="_blank"
-                                            rel="noopener noreferrer">
-                                            <SkillIcon path={FigmaLogo} />&nbsp;&nbsp;UI/UX Design
                                         </Link>
 
                                     </div>
@@ -839,7 +1047,7 @@ const Home = () => {
                                     <div className="row">
 
                                         <div className="project-card">
-                                            <p className="fs-6 raleway-semibold"><FontAwesomeIcon icon={faCircle} style={{ color: "#59e33d" }} />&nbsp;&nbsp;Factory Management System</p>
+                                            <p className="fs-6 raleway-semibold"><FontAwesomeIcon icon={faCircle} style={{ color: "#59e33d" }} />&nbsp;&nbsp;Factory Management System <span className="raleway-light">| Udaya Industries</span></p>
                                             <div className="tooltip-text raleway-semibold">Solo Project</div>
                                         </div>
 

@@ -29,9 +29,9 @@ const NameCard = () => {
                 <img src={MeOne} alt={MeOne} style={{ width: '12rem' }} />
             </a>
 
-            <p className="fs-1 mt-4 neon-text"> WEB DEVELOPER &amp; UI/UX DESIGNER</p>
+            <p className="fs-1 mt-4 neon-text"> UX DESIGNER &amp; WEB DEVELOPER</p>
 
-            <p className="fs-5 raleway-light">...and occasionally, a graphic designer &amp; photographer!</p>
+            <p className="fs-5 raleway-light">...and an occasional  graphic designer &amp; photographer!</p>
 
             <div className='mt-4 row align-items-center justify-content-center text-content'>
 
