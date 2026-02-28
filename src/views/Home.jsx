@@ -9,6 +9,7 @@ import NavigationBar from '../components/NavigationBar';
 import FooterComponent from '../components/FooterComponent';
 
 import NewMe from '../assets/img/new-me.png';
+import MainLogo from '../assets/img/dila_logo_bw.png';
 
 import TenzrHealthLogo from "../assets/img/skills/tenzr-health.png";
 import SeyonTaxLogo from "../assets/img/skills/seyon-tax.png";
@@ -143,9 +144,7 @@ const Home = () => {
                         <p className='fs-6' style={{ marginBottom: "8px" }}>Contributed to the evolution of a digital health platform used by therapists and patients across web and mobile environments</p>
 
                         <ul className='fs-6'>
-                            <li>
-                                Led UX definition for a new print preview workflow, identifying system gaps and designing the feature architecture from concept to validated prototype.
-                            </li>
+                            <li>Led UX definition for a new print preview workflow, identifying system gaps and designing the feature architecture from concept to validated prototype</li>
                             <li>Mapped complex therapist workflows, uncovered edge cases, and improved interface clarity across clinical interactions</li>
                             <li>Established reusable UI patterns and documented structured component behaviors to support cross platform consistency</li>
                             <li>Partnered with product and engineering to validate responsive logic, accessibility compliance, and real world usage constraints</li>
@@ -203,9 +202,9 @@ const Home = () => {
                         <ul className='fs-6'>
                             <li>Designed end to end user flows for tax filing, document collection, and task progress tracking, reducing workflow friction</li>
                             <li>Structured UI architecture to support scalable modules and consistent financial form patterns</li>
-                            <li>Introduced standardized components and shared interaction models across filing modules.</li>
+                            <li>Introduced standardized components and shared interaction models across filing modules</li>
                             <li>Collaborated with development to ensure implementation accuracy, responsive behavior, and error handling clarity</li>
-                            <span className='gsf-extralight-italic'>Note: Design assets are confidential due to NDA. Sanitized UI samples available below.</span>
+                            <span className='gsf-extralight-italic'>Note: Design assets are confidential due to NDA. Sanitized UI samples available below</span>
                         </ul>
 
                         <Link
@@ -222,6 +221,51 @@ const Home = () => {
                             type="button"
                             className="skill-pill"
                             to="https://www.figma.com/design/fBJYhatD5G3lzTktsDhUU9/Payroll-%7C-Sanitized-for-view?node-id=0-1&t=n725xPnPYk2PF9vU-1"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <SkillIcon path={FigmaIcon} />&nbsp;&nbsp;UI Design (Figma)
+                        </Link>
+
+                    </div>
+
+                    <div className='custom-card mt-3'>
+
+                        <div className="mb-2 row align-items-center">
+                            < div className="col-auto">
+                                <p className="gsf-medium fs-5 mb-0">
+                                    My Portfolio Website
+                                </p>
+                            </div>
+                            <div className="col-auto line-separator">
+                                <p className="gsf-regular fs-4 mb-0" style={{ color: "#BBAFCE" }}>
+                                    |
+                                </p>
+                            </div>
+                            <div className="col-auto">
+                                <img
+                                    className='work-image'
+                                    src={MainLogo}
+                                    alt={MainLogo}
+                                    style={{ width: "2rem" }}
+                                />
+                            </div>
+                        </div>
+
+                        <p className="program-role mt-2 mb-3" style={{ backgroundColor: "#EFF1CD" }}>UI Designer</p>
+
+                        <p className='fs-6' style={{ marginBottom: "8px" }}>Led UX structure and component design for the organization’s public facing digital platform</p>
+
+                        <ul className='fs-6'>
+                            <li>Designed and developed my personal portfolio to showcase structured UX thinking and scalable component architecture</li>
+                            <li>Built reusable UI patterns aligned with a cohesive design system and consistent visual hierarchy</li>
+                            <li>Engineered responsive layouts with accessibility best practices and clean front end implementation</li>
+                        </ul>
+
+                        <Link
+                            style={{ textDecoration: "none" }}
+                            type="button"
+                            className="skill-pill"
+                            to="https://www.figma.com/design/yvtOkWolvooXD0LOutVQ31/Portfolio-%7C-Dilshan-Liyanage?node-id=58-2&t=2ohAoE0WIaEJ2gfE-1"
                             target="_blank"
                             rel="noopener noreferrer">
                             <SkillIcon path={FigmaIcon} />&nbsp;&nbsp;UI Design (Figma)
@@ -258,7 +302,7 @@ const Home = () => {
 
                         <ul className='fs-6'>
                             <li>Designed structured UI components aligned with brand guidelines and reusable system patterns</li>
-                            <li>Ensured responsive behaviour and accessibility compliance across breakpoints.</li>
+                            <li>Ensured responsive behaviour and accessibility compliance across breakpoints</li>
                             <li>Collaborated with development to maintain consistency between design intent and implementation</li>
                         </ul>
 

@@ -11,7 +11,7 @@ const Footer = () => {
     return (
 
         <footer>
-            <p className='fs-6 mt-5' style={{ color: "#707070", marginBottom: "8px" }}>Dilshan Liyanage © Copyright {currentYear}. All rights reserved.</p>
+            <p className='fs-6 mt-5' style={{ color: "#707070", marginBottom: "8px" }}>Designed and built by Dilshan Liyanage &#169; Copyright {currentYear}. All rights reserved.</p>
         </footer>
 
     );

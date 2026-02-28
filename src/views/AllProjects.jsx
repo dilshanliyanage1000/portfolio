@@ -6,6 +6,8 @@ import SkillIcon from '../components/SkillIcon';
 import NavigationBar from '../components/NavigationBar';
 import FooterComponent from '../components/FooterComponent';
 
+import MainLogo from '../assets/img/dila_logo_bw.png';
+
 import TenzrHealthLogo from "../assets/img/skills/tenzr-health.png";
 import SeyonTaxLogo from "../assets/img/skills/seyon-tax.png";
 import CentennialCollegeLogo from "../assets/img/skills/centennial-college.jpg";
@@ -150,6 +152,60 @@ const AllProjects = () => {
                         type="button"
                         className="skill-pill"
                         to="https://www.figma.com/design/fBJYhatD5G3lzTktsDhUU9/Payroll-%7C-Sanitized-for-view?node-id=0-1&t=n725xPnPYk2PF9vU-1"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <SkillIcon path={FigmaIcon} />&nbsp;&nbsp;UI Design (Figma)
+                    </Link>
+
+                </div>
+
+                <div className='custom-card mt-3'>
+
+                    <div className="mb-2 row align-items-center">
+                        < div className="col-auto">
+                            <p className="gsf-medium fs-5 mb-0">
+                                My Portfolio Website
+                            </p>
+                        </div>
+                        <div className="col-auto line-separator">
+                            <p className="gsf-regular fs-4 mb-0" style={{ color: "#BBAFCE" }}>
+                                |
+                            </p>
+                        </div>
+                        <div className="col-auto">
+                            <img
+                                className='work-image'
+                                src={MainLogo}
+                                alt={MainLogo}
+                                style={{ width: "2rem" }}
+                            />
+                        </div>
+                    </div>
+
+                    <p className="program-role mt-2 mb-3" style={{ backgroundColor: "#EFF1CD" }}>UI Designer</p>
+
+                    <p className='fs-6' style={{ marginBottom: "8px" }}>Led UX structure and component design for the organization’s public facing digital platform</p>
+
+                    <ul className='fs-6'>
+                        <li>Designed and developed my personal portfolio to showcase structured UX thinking and scalable component architecture</li>
+                        <li>Built reusable UI patterns aligned with a cohesive design system and consistent visual hierarchy</li>
+                        <li>Engineered responsive layouts with accessibility best practices and clean front end implementation</li>
+                    </ul>
+
+                    <Link
+                        type="button"
+                        className="skill-pill"
+                        to="https://wimtach.centennialcollege.ca/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <SkillIcon path={GlobeIcon} />&nbsp;&nbsp;Website
+                    </Link>
+
+                    <Link
+                        style={{ textDecoration: "none" }}
+                        type="button"
+                        className="skill-pill"
+                        to="https://www.figma.com/design/7w2rsR4ZqMs1GKHPIDUXHl/WIMTACH-Website?node-id=0-1&t=OuBlUzwJyPUhLhuy-1"
                         target="_blank"
                         rel="noopener noreferrer">
                         <SkillIcon path={FigmaIcon} />&nbsp;&nbsp;UI Design (Figma)
