@@ -1,22 +1,23 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, ScrollRestoration } from 'react-router-dom';
 import Home from './views/Home';
-import Gallery from './views/Gallery';
-import Projects from './views/Projects';
+import AllProject from './views/AllProjects';
+import AboutMe from './views/AboutMe';
 import Contact from './views/Contact';
 
 const App = () => {
 
   return (
     <>
+      <ScrollRestoration />
       <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route path='/gallery' element={<Gallery />} />
-        <Route path='/projects' element={<Projects />} />
+        <Route path='/allprojects' element={<AllProject />} />
+        <Route path='/aboutme' element={<AboutMe />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
     </>
   );
+
 }
 
 export default App;

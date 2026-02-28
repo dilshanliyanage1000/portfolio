@@ -1,125 +1,109 @@
-import React, { useState, useEffect } from 'react';
-import MainNav from '../components/MainNav';
-import BottomNav from '../components/BottomNav';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import { faMailBulk } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faInstagram, faLinkedin, faTiktok } from '@fortawesome/free-brands-svg-icons';
-import BgTwo from "../assets/img/bg/abstract_02.png";
+import { Send } from 'lucide-react';
+
+import SkillIcon from '../components/SkillIcon';
+import BottomNav from '../components/Footer';
+import NavigationBar from '../components/NavigationBar';
+
+import LinkedInLogo from "../assets/img/skills/linkedin.png";
+import GitHubLogo from "../assets/img/skills/github-logo.png";
 
 const Contact = () => {
 
-    const param1 = "Contact";
-
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        document.body.style.backgroundImage = `url(${BgTwo})`;
-        return () => {
-            document.body.style.backgroundImage = '';
-        };
-    }, []);
-
-    useEffect(() => {
-        document.body.style.backgroundColor = "#31253b";
-        return () => {
-            document.body.style.backgroundColor = '';
-        };
-    }, []);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-
-    window.scrollTo(0, 0);
-
     return (
+
         <>
 
-            <MainNav title={param1} />
+            {/* NAVIGATION BAR */}
 
-            <div id='main-content'></div>
+            <NavigationBar />
 
-            <div className="main-content-area">
+            {/* NAVIGATION BAR END */}
 
-                <main className="custom-container" style={{ textAlign: windowWidth < 768 ? 'center' : 'left' }}>
+            {/* BODY */}
 
-                    <div className="frosted-glass br-20 jumbotron">
+            <div className="full-screen-view-height">
 
-                        <div className="content-wrapper">
+                <div className="custom-container mb-5">
 
-                            <p className="display-4 mt-4 abril-fatface-regular">Let's connect!</p>
+                    <p className="display-6 gsf-medium text-black"><span className="color-gradient-animation">Let&apos;s build scalable product systems</span></p>
 
-                            <p className="poppins-extralight fs-5 mt-3">
-                                Please feel free to reach out to me and I will get back to you as soon as possible!
-                            </p>
-
-                            <div className='mt-2 row align-items-center justify-content-center text-content'>
-
-                                <div className='text-center'>
-                                    <Link to="mailto:aliyana4@my.centennialcollege.ca" target="_blank" rel="noopener noreferrer">
-                                        <button type="button" className="theme-button">
-                                            <FontAwesomeIcon icon={faMailBulk} />&nbsp;&nbsp;Email
-                                        </button>
-                                    </Link>
-                                </div>
-
-                                <div className='mt-1 text-center'>
-                                    <Link to="https://www.linkedin.com/in/dilaliyanage/" target="_blank" rel="noopener noreferrer">
-                                        <button type="button" className="theme-button">
-                                            <FontAwesomeIcon icon={faLinkedin} />&nbsp;&nbsp;LinkedIn
-                                        </button>
-                                    </Link>
-                                </div>
-
-                                <div className='mt-1 text-center'>
-                                    <Link to="https://github.com/dilshanliyanage1000/" target="_blank" rel="noopener noreferrer">
-                                        <button type="button" className="theme-button">
-                                            <FontAwesomeIcon icon={faGithub} />&nbsp;&nbsp;GitHub
-                                        </button>
-                                    </Link>
-                                </div>
-
-                                <div className='mt-1 text-center'>
-                                    <Link to="https://www.instagram.com/just_dila/" target="_blank" rel="noopener noreferrer">
-                                        <button type="button" className="theme-button">
-                                            <FontAwesomeIcon icon={faInstagram} />&nbsp;&nbsp;Instagram
-                                        </button>
-                                    </Link>
-                                </div>
-
-                                <div className='mt-1 text-center'>
-                                    <Link to="https://www.tiktok.com/@slcanadiankolla" target="_blank" rel="noopener noreferrer">
-                                        <button type="button" className="theme-button">
-                                            <FontAwesomeIcon icon={faTiktok} />&nbsp;&nbsp;TikTok
-                                        </button>
-                                    </Link>
-                                </div>
-
-                            </div>
-
-                        </div>
-
+                    <div className="hero-subcopy-wrapper mb-5">
+                        <p className="mt-4 fs-4 gsf-light">
+                            I&apos;m always open to discussing product design, design systems, workflow optimization, or new opportunities. If you&apos;re building complex digital platforms and value structured, scalable UX, I&apos;d love to connect.
+                        </p>
                     </div>
 
-                </main >
+                    <Link
+                        style={{ textDecoration: "none" }}
+                        type="button"
+                        className="skill-pill fs-5"
+                        to="https://www.linkedin.com/in/dilaliyanage/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <SkillIcon path={LinkedInLogo} />&nbsp;&nbsp;LinkedIn
+                    </Link>
+
+                    <Link
+                        style={{ textDecoration: "none" }}
+                        type="button"
+                        className="skill-pill fs-5"
+                        to="https://github.com/dilshanliyanage1000"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <SkillIcon path={GitHubLogo} />&nbsp;&nbsp;GitHub
+                    </Link>
+
+                    <Link
+                        style={{ textDecoration: "none" }}
+                        type="button"
+                        className="skill-pill fs-5"
+                        to="mailto:dilshanliyanage1000@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <Send size={18} style={{ color: "#64895F" }} />&nbsp;&nbsp;Email
+                    </Link>
+
+                    <p className='fs-6 gsf-medium' style={{ marginBottom: "8px", marginTop: "120px" }}>Navigation</p>
+
+                    <div className="mt-3" style={{ gap: "10px" }}>
+                        <div className="mt-3" style={{ gap: "10px" }}>
+                            <Link
+                                style={{ textDecoration: "none" }}
+                                className='text-black'
+                                type="button"
+                                to="/portfolio/">
+                                Work
+                            </Link>
+                            &nbsp;&nbsp;•&nbsp;&nbsp;
+                            <Link
+                                style={{ textDecoration: "none" }}
+                                className='text-black'
+                                type="button"
+                                to="/portfolio/aboutme">
+                                About Me
+                            </Link>
+                            &nbsp;&nbsp;•&nbsp;&nbsp;
+                            <Link
+                                style={{ textDecoration: "none" }}
+                                className='text-black'
+                                type="button"
+                                to="/portfolio/contact">
+                                Contact
+                            </Link>
+                        </div>
+                    </div>
+
+                    <BottomNav />
+
+                </div>
 
             </div>
 
-            <BottomNav />
-
         </>
+
     );
 
-};
-
+}
 
 export default Contact;

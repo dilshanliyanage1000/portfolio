@@ -1,137 +1,122 @@
-.raleway-thin {
-  font-family: "Raleway", sans-serif;
+/* fonts.css */
+
+:root {
+  --font-sans: "Google Sans Flex", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Global default */
+html,
+body {
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
+}
+
+/* Utility classes (drop-in replacement for your Raleway classes) */
+
+.gsf-thin {
+  font-family: var(--font-sans);
   font-weight: 100;
   font-style: normal;
 }
 
-.raleway-extralight {
-  font-family: "Raleway", sans-serif;
+.gsf-extralight {
+  font-family: var(--font-sans);
   font-weight: 200;
   font-style: normal;
 }
 
-.raleway-light {
-  font-family: "Raleway", sans-serif;
+.gsf-light {
+  font-family: var(--font-sans);
   font-weight: 300;
   font-style: normal;
 }
 
-.raleway-regular {
-  font-family: "Raleway", sans-serif;
+.gsf-regular {
+  font-family: var(--font-sans);
   font-weight: 400;
   font-style: normal;
 }
 
-.raleway-medium {
-  font-family: "Raleway", sans-serif;
+.gsf-medium {
+  font-family: var(--font-sans);
   font-weight: 500;
   font-style: normal;
 }
 
-.raleway-semibold {
-  font-family: "Raleway", sans-serif;
+.gsf-semibold {
+  font-family: var(--font-sans);
   font-weight: 600;
   font-style: normal;
 }
 
-.raleway-bold {
-  font-family: "Raleway", sans-serif;
+.gsf-bold {
+  font-family: var(--font-sans);
   font-weight: 700;
   font-style: normal;
 }
 
-.raleway-extrabold {
-  font-family: "Raleway", sans-serif;
+.gsf-extrabold {
+  font-family: var(--font-sans);
   font-weight: 800;
   font-style: normal;
 }
 
-.raleway-black {
-  font-family: "Raleway", sans-serif;
+.gsf-black {
+  font-family: var(--font-sans);
   font-weight: 900;
   font-style: normal;
 }
 
-.raleway-thin-italic {
-  font-family: "Raleway", sans-serif;
+.gsf-thin-italic {
+  font-family: var(--font-sans);
   font-weight: 100;
   font-style: italic;
 }
 
-.raleway-extralight-italic {
-  font-family: "Raleway", sans-serif;
+.gsf-extralight-italic {
+  font-family: var(--font-sans);
   font-weight: 200;
   font-style: italic;
 }
 
-.raleway-light-italic {
-  font-family: "Raleway", sans-serif;
+.gsf-light-italic {
+  font-family: var(--font-sans);
   font-weight: 300;
   font-style: italic;
 }
 
-.raleway-regular-italic {
-  font-family: "Raleway", sans-serif;
+.gsf-regular-italic {
+  font-family: var(--font-sans);
   font-weight: 400;
   font-style: italic;
 }
 
-.raleway-medium-italic {
-  font-family: "Raleway", sans-serif;
+.gsf-medium-italic {
+  font-family: var(--font-sans);
   font-weight: 500;
   font-style: italic;
 }
 
-.raleway-semibold-italic {
-  font-family: "Raleway", sans-serif;
+.gsf-semibold-italic {
+  font-family: var(--font-sans);
   font-weight: 600;
   font-style: italic;
 }
 
-.raleway-bold-italic {
-  font-family: "Raleway", sans-serif;
+.gsf-bold-italic {
+  font-family: var(--font-sans);
   font-weight: 700;
   font-style: italic;
 }
 
-.raleway-extrabold-italic {
-  font-family: "Raleway", sans-serif;
+.gsf-extrabold-italic {
+  font-family: var(--font-sans);
   font-weight: 800;
   font-style: italic;
 }
 
-.raleway-black-italic {
-  font-family: "Raleway", sans-serif;
+.gsf-black-italic {
+  font-family: var(--font-sans);
   font-weight: 900;
   font-style: italic;
-}
-
-.abril-fatface-regular {
-  font-family: "Abril Fatface", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NeonFont";
-  src: url("../fonts/Clip.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-.neon-text {
-  font-family: "NeonFont", sans-serif;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #fff;
-  position: relative;
-  z-index: 1;
-  text-shadow: 0 0 5px #1a7f92, /* Lighter shade */ 0 0 10px #338c9f,
-    /* Lighter shade */ 0 0 15px #016d7f, /* Original color */ 0 0 20px #015c6d,
-    /* Darker shade */ 0 0 25px #013c4d; /* Darker shade */
-}
-
-.neon-font {
-  font-family: "NeonFont", sans-serif;
-  letter-spacing: 3px;
 }
