@@ -109,15 +109,16 @@ ul {
   width: fit-content;
   max-width: 100%;
   align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  background-color: #ffffff;
-  color: #303030;
-  padding: 6px 16px;
-  border-radius: 100px;
-  margin-right: 10px;
   border: 2px solid #EAEAEA;
+  border-radius: 100px;
+  justify-content: center;
+  color: #303030;
+  text-decoration: none;
+  text-align: center;
+  padding: 6px 16px;
+  margin-right: 10px;
   gap: 4px;
+  background-color: #ffffff;
 }
 
 .skill-pill {
@@ -144,6 +145,7 @@ ul {
       #48ABAB);
   background-size: 200% 100%;
   animation: gradientMove 8s linear infinite;
+  transition: transform 0.2s ease;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -152,32 +154,47 @@ ul {
 }
 
 .primary-gradient-button {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 24px;
+  margin-right: 10px;
+  gap: 8px;
+  cursor: pointer;
+
   background: linear-gradient(90deg,
       #48ABAB,
       #486EAB,
       #48ABAB);
   background-size: 200% 100%;
-  border: none;
   animation: gradientMove 8s linear infinite;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  padding: 12px 24px;
-  border-radius: 100px;
   transition: transform 0.2s ease;
-  width: auto;
-  cursor: default;
 }
 
 .primary-gradient-outline-button {
-  position: relative;
-  padding: 12px 24px;
-  border-radius: 100px;
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  align-items: center;
   border: 2px solid transparent;
-  cursor: pointer;
-  text-align: center;
+  border-radius: 100px;
+  justify-content: center;
+  color: #486EAB;
   text-decoration: none;
-  transition: transform 0.2s ease;
+  text-align: center;
+  padding: 12px 24px;
+  margin-right: 10px;
+  gap: 8px;
+  cursor: pointer;
+
+  position: relative;
   background:
     linear-gradient(#fff, #fff) padding-box,
     linear-gradient(90deg,
@@ -186,7 +203,7 @@ ul {
       #48ABAB) border-box;
   background-size: 100% 100%, 200% 100%;
   animation: gradientMove 8s linear infinite;
-  color: #486EAB;
+  transition: transform 0.2s ease;
 }
 
 .primary-gradient-outline-button.no-outline {
@@ -202,6 +219,12 @@ ul {
 .skill-pill:hover,
 .why-me:hover {
   transform: translateY(-3px);
+}
+
+.hero-headline-slot {
+  height: 170px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .mobile-view {
@@ -297,6 +320,8 @@ ul {
 
 .fade-hero {
   animation: fadeSlide 650ms cubic-bezier(0.2, 0.9, 0.2, 1);
+  line-height: 1.1;
+  margin: 0;
 }
 
 @keyframes fadeSlide {

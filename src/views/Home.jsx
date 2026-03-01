@@ -66,12 +66,11 @@ const Home = () => {
                             Hello, I&apos;m Dilshan! <span className="wave">👋🏼</span>
                         </p>
 
-                        <p
-                            key={index}
-                            className="display-3 gsf-medium text-black fade-hero"
-                        >
-                            {headlines[index]}
-                        </p>
+                        <div className="hero-headline-slot">
+                            <p key={index} className="display-3 gsf-medium text-black fade-hero">
+                                {headlines[index]}
+                            </p>
+                        </div>
 
                         <div className="hero-subcopy-wrapper">
                             <p className="mt-4 fs-4 gsf-light">
@@ -83,19 +82,18 @@ const Home = () => {
 
                             <button
                                 type="button"
-                                className="fs-6 mt-2 gsf-regular primary-gradient-button me-2"
+                                className="fs-6 mt-2 gsf-regular primary-gradient-button"
                                 onClick={() => scrollToSection(WorkRef)}
                                 rel="noopener noreferrer">
-                                Explore My Work&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff" }} />
+                                Explore My Work<FontAwesomeIcon icon={faArrowRight} />
                             </button>
 
                             <button
-                                style={{ textDecoration: "none" }}
                                 type="button"
                                 className="fs-6 mt-2 gsf-regular primary-gradient-outline-button"
                                 onClick={() => scrollToSection(aboutMeRef)}
                                 rel="noopener noreferrer">
-                                <span className="color-gradient-animation">About Me</span>&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} />
+                                <span className="color-gradient-animation">About Me</span><FontAwesomeIcon icon={faArrowRight} />
                             </button>
 
                         </div>
@@ -332,7 +330,7 @@ const Home = () => {
                             type="button"
                             className="fs-5 gsf-regular primary-gradient-outline-button no-outline"
                             to="allprojects">
-                            See All Projects&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} style={{ color: "#439B9B" }} />
+                            See All Projects<FontAwesomeIcon icon={faArrowRight} style={{ color: "#439B9B" }} />
                         </Link>
                     </div>
 
@@ -504,7 +502,7 @@ const Home = () => {
                                         type="button"
                                         className="fs-6 gsf-regular primary-gradient-button"
                                         to="aboutme">
-                                        Read more about me&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff" }} />
+                                        Read more about me<FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff" }} />
                                     </Link>
                                 </div>
 

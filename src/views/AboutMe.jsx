@@ -133,7 +133,7 @@ const AboutMe = () => {
                                     to="https://www.linkedin.com/in/dilaliyanage/"
                                     target="_blank"
                                     rel="noopener noreferrer">
-                                    View LinkedIn&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff" }} />
+                                    View LinkedIn<FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff" }} />
                                 </Link>
 
                                 <a
@@ -142,7 +142,7 @@ const AboutMe = () => {
                                     href={ResumePDF}
                                     download="Dilshan_Liyanage_Resume.pdf"
                                 >
-                                    <span className="color-gradient-animation">Download Resume</span>&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} />
+                                    <span className="color-gradient-animation">Download Resume</span><FontAwesomeIcon icon={faArrowRight} />
                                 </a>
                             </div>
 

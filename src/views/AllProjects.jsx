@@ -31,14 +31,13 @@ const AllProjects = () => {
 
             <div className="custom-container">
 
-                <div className="mb-4">
+                <div className="mb-4 mt-4">
 
                     <Link
-                        style={{ textDecoration: "none", marginRight: "10px" }}
                         type="button"
-                        className="fs-5 gsf-regular primary-gradient-outline-button no-outline mt-4"
+                        className="fs-5 gsf-regular primary-gradient-outline-button no-outline"
                         to="/portfolio/">
-                        <FontAwesomeIcon icon={faArrowLeft} style={{ color: "#439B9B" }} />&nbsp;&nbsp;Back to portfolio
+                        <FontAwesomeIcon icon={faArrowLeft} style={{ color: "#439B9B" }} />Back to portfolio
                     </Link>
 
                 </div>
