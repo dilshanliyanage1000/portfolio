@@ -133,7 +133,7 @@ const AllProjects = () => {
                     <ul className='fs-6'>
                         <li>Designed end to end user flows for tax filing, document collection, and task progress tracking, reducing workflow friction</li>
                         <li>Structured UI architecture to support scalable modules and consistent financial form patterns</li>
-                        <li>Introduced standardized components and shared interaction models across filing modules.</li>
+                        <li>Introduced standardized components and shared interaction models across filing modules</li>
                         <li>Collaborated with development to ensure implementation accuracy, responsive behavior, and error handling clarity</li>
                         <span className='gsf-extralight-italic'>Note: Design assets are confidential due to NDA. Sanitized UI samples available below.</span>
                     </ul>
@@ -184,7 +184,7 @@ const AllProjects = () => {
 
                     <p className="program-role mt-2 mb-3" style={{ backgroundColor: "#EFF1CD" }}>UI Designer</p>
 
-                    <p className='fs-6' style={{ marginBottom: "8px" }}>Led UX structure and component design for the organization’s public facing digital platform</p>
+                    <p className='fs-6' style={{ marginBottom: "8px" }}>Designed and developed a structured portfolio platform that reflects my scalable UX systems approach</p>
 
                     <ul className='fs-6'>
                         <li>Designed and developed my personal portfolio to showcase structured UX thinking and scalable component architecture</li>
@@ -193,19 +193,10 @@ const AllProjects = () => {
                     </ul>
 
                     <Link
-                        type="button"
-                        className="skill-pill"
-                        to="https://wimtach.centennialcollege.ca/"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <SkillIcon path={GlobeIcon} />&nbsp;&nbsp;Website
-                    </Link>
-
-                    <Link
                         style={{ textDecoration: "none" }}
                         type="button"
                         className="skill-pill"
-                        to="https://www.figma.com/design/7w2rsR4ZqMs1GKHPIDUXHl/WIMTACH-Website?node-id=0-1&t=OuBlUzwJyPUhLhuy-1"
+                        to="https://www.figma.com/design/yvtOkWolvooXD0LOutVQ31/Portfolio-%7C-Dilshan-Liyanage?node-id=58-2&t=2ohAoE0WIaEJ2gfE-1"
                         target="_blank"
                         rel="noopener noreferrer">
                         <SkillIcon path={FigmaIcon} />&nbsp;&nbsp;UI Design (Figma)

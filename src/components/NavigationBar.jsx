@@ -55,7 +55,8 @@ const NavigationBar = () => {
                             className="nav-link gsf-regular fs-5"
                             to="https://www.linkedin.com/in/dilaliyanage/"
                             target="_blank"
-                            rel="noopener noreferrer">
+                            rel="noopener noreferrer"
+                            aria-label="Visit Dilshan Liyanage on LinkedIn, opens in a new tab">
                             <FontAwesomeIcon icon={faLinkedin} size="lg" />
                         </Link>
                     </ul>

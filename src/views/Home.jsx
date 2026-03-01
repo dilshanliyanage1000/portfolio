@@ -253,7 +253,7 @@ const Home = () => {
 
                         <p className="program-role mt-2 mb-3" style={{ backgroundColor: "#EFF1CD" }}>UI Designer</p>
 
-                        <p className='fs-6' style={{ marginBottom: "8px" }}>Led UX structure and component design for the organization’s public facing digital platform</p>
+                        <p className='fs-6' style={{ marginBottom: "8px" }}>Designed and developed a structured portfolio platform that reflects my scalable UX systems approach</p>
 
                         <ul className='fs-6'>
                             <li>Designed and developed my personal portfolio to showcase structured UX thinking and scalable component architecture</li>
