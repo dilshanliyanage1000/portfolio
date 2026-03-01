@@ -327,13 +327,14 @@ const Home = () => {
 
                     </div>
 
-                    <Link
-                        style={{ marginRight: "10px", marginTop: "2rem" }}
-                        type="button"
-                        className="fs-5 gsf-regular primary-gradient-outline-button no-outline"
-                        to="allprojects">
-                        See All Projects&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} style={{ color: "#439B9B" }} />
-                    </Link>
+                    <div className='mrem-2'>
+                        <Link
+                            type="button"
+                            className="fs-5 gsf-regular primary-gradient-outline-button no-outline"
+                            to="allprojects">
+                            See All Projects&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} style={{ color: "#439B9B" }} />
+                        </Link>
+                    </div>
 
                 </div>
 
@@ -498,14 +499,14 @@ const Home = () => {
 
                                 <p className='fs-6' style={{ marginBottom: "8px" }}>My background in software engineering allows me to collaborate closely with development teams, validate interaction logic, and ensure implementation accuracy across complex digital ecosystems.</p>
 
-                                <Link
-                                    style={{ textDecoration: "none", marginRight: "10px", marginTop: "2rem" }}
-                                    type="button"
-                                    className="fs-6 gsf-regular primary-gradient-button"
-                                    to="aboutme">
-                                    Read more about me&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff" }} />
-                                </Link>
-
+                                <div className='mrem-2'>
+                                    <Link
+                                        type="button"
+                                        className="fs-6 gsf-regular primary-gradient-button"
+                                        to="aboutme">
+                                        Read more about me&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff" }} />
+                                    </Link>
+                                </div>
 
                             </div>
 
@@ -543,13 +544,14 @@ const Home = () => {
 
                                 <p className='fs-6' style={{ marginBottom: "8px" }}>My background in software engineering allows me to collaborate closely with development teams, validate interaction logic, and ensure implementation accuracy across complex digital ecosystems.</p>
 
-                                <Link
-                                    style={{ textDecoration: "none", marginRight: "10px" }}
-                                    type="button"
-                                    className="fs-6 gsf-regular primary-gradient-button mt-3"
-                                    to="aboutme">
-                                    Read more about me&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff" }} />
-                                </Link>
+                                <div className='mrem-2'>
+                                    <Link
+                                        type="button"
+                                        className="fs-6 gsf-regular primary-gradient-button"
+                                        to="aboutme">
+                                        Read more about me&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff" }} />
+                                    </Link>
+                                </div>
 
                             </div>
 
