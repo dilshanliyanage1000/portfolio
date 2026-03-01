@@ -59,9 +59,9 @@ const AboutMe = () => {
 
                             <p className='fs-6' style={{ marginBottom: "12px" }}>If you work with me, you can expect thoughtful collaboration, system level thinking, and design decisions grounded in measurable impact.</p>
 
-                            <div style={{ marginTop: "2rem" }}>
+                            <div className='mrem-2'>
                                 <Link
-                                    style={{ textDecoration: "none", marginRight: "10px" }}
+                                    style={{ marginRight: "10px" }}
                                     type="button"
                                     className="fs-6 gsf-regular primary-gradient-button"
                                     to="https://www.linkedin.com/in/dilaliyanage/"
@@ -126,15 +126,25 @@ const AboutMe = () => {
 
                             <p className='fs-6' style={{ marginBottom: "12px" }}>If you work with me, you can expect thoughtful collaboration, system level thinking, and design decisions grounded in measurable impact.</p>
 
-                            <Link
-                                style={{ textDecoration: "none", marginRight: "10px" }}
-                                type="button"
-                                className="fs-6 gsf-regular primary-gradient-button mt-3"
-                                to="https://www.linkedin.com/in/dilaliyanage/"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                Read more about me&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff" }} />
-                            </Link>
+                            <div className='mrem-2'>
+                                <Link
+                                    type="button"
+                                    className="fs-6 gsf-regular primary-gradient-button"
+                                    to="https://www.linkedin.com/in/dilaliyanage/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    View LinkedIn&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffffff" }} />
+                                </Link>
+
+                                <a
+                                    type="button"
+                                    className="fs-6 mt-3 gsf-regular primary-gradient-outline-button"
+                                    href={ResumePDF}
+                                    download="Dilshan_Liyanage_Resume.pdf"
+                                >
+                                    <span className="color-gradient-animation">Download Resume</span>&nbsp;&nbsp;<FontAwesomeIcon icon={faArrowRight} />
+                                </a>
+                            </div>
 
                         </div>
 

@@ -29,15 +29,14 @@ const Contact = () => {
                     <p className="display-6 gsf-medium text-black"><span className="color-gradient-animation">Let&apos;s build scalable product systems</span></p>
 
                     <div className="hero-subcopy-wrapper mb-5">
-                        <p className="mt-4 fs-4 gsf-light">
+                        <p className="mt-4 fs-5 gsf-light">
                             I&apos;m always open to discussing product design, design systems, workflow optimization, or new opportunities. If you&apos;re building complex digital platforms and value structured, scalable UX, I&apos;d love to connect.
                         </p>
                     </div>
 
                     <Link
-                        style={{ textDecoration: "none" }}
                         type="button"
-                        className="skill-pill fs-5"
+                        className="skill-pill fs-6"
                         to="https://www.linkedin.com/in/dilaliyanage/"
                         target="_blank"
                         rel="noopener noreferrer">
@@ -45,9 +44,8 @@ const Contact = () => {
                     </Link>
 
                     <Link
-                        style={{ textDecoration: "none" }}
                         type="button"
-                        className="skill-pill fs-5"
+                        className="skill-pill fs-6"
                         to="https://github.com/dilshanliyanage1000"
                         target="_blank"
                         rel="noopener noreferrer">
@@ -55,9 +53,8 @@ const Contact = () => {
                     </Link>
 
                     <Link
-                        style={{ textDecoration: "none" }}
                         type="button"
-                        className="skill-pill fs-5"
+                        className="skill-pill fs-6"
                         to="mailto:dilshanliyanage1000@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer">
