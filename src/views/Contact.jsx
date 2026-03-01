@@ -61,34 +61,29 @@ const Contact = () => {
                         <Send size={18} style={{ color: "#64895F" }} />&nbsp;&nbsp;Email
                     </Link>
 
-                    <p className='fs-6 gsf-medium' style={{ marginBottom: "8px", marginTop: "120px" }}>Navigation</p>
+                    <p className='fs-6 gsf-medium mt-5' style={{ marginBottom: "8px", marginTop: "85px" }}>Navigation</p>
 
-                    <div className="mt-3" style={{ gap: "10px" }}>
-                        <div className="mt-3" style={{ gap: "10px" }}>
-                            <Link
-                                style={{ textDecoration: "none" }}
-                                className='text-black'
-                                type="button"
-                                to="/portfolio/">
-                                Work
-                            </Link>
-                            &nbsp;&nbsp;•&nbsp;&nbsp;
-                            <Link
-                                style={{ textDecoration: "none" }}
-                                className='text-black'
-                                type="button"
-                                to="/portfolio/aboutme">
-                                About Me
-                            </Link>
-                            &nbsp;&nbsp;•&nbsp;&nbsp;
-                            <Link
-                                style={{ textDecoration: "none" }}
-                                className='text-black'
-                                type="button"
-                                to="/portfolio/contact">
-                                Contact
-                            </Link>
-                        </div>
+                    <div className="mt-3 d-flex align-items-center" style={{ gap: "8px" }}>
+                        <Link
+                            className='text-black text-decoration-none'
+                            type="button"
+                            to="/portfolio/">
+                            Work
+                        </Link>
+                        <span>•</span>
+                        <Link
+                            className='text-black text-decoration-none'
+                            type="button"
+                            to="/portfolio/aboutme">
+                            About Me
+                        </Link>
+                        <span>•</span>
+                        <Link
+                            className='text-black text-decoration-none'
+                            type="button"
+                            to="/portfolio/contact">
+                            Contact
+                        </Link>
                     </div>
 
                     <BottomNav />

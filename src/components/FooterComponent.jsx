@@ -54,26 +54,23 @@ const FooterComponent = () => {
 
                     <p className='fs-6 gsf-medium mt-5' style={{ marginBottom: "8px" }}>Navigation</p>
 
-                    <div className="mt-3" style={{ gap: "10px" }}>
+                    <div className="mt-3 d-flex align-items-center" style={{ gap: "8px" }}>
                         <Link
-                            style={{ textDecoration: "none" }}
-                            className='text-black'
+                            className='text-black text-decoration-none'
                             type="button"
                             to="/portfolio/">
                             Work
                         </Link>
-                        &nbsp;&nbsp;•&nbsp;&nbsp;
+                        <span>•</span>
                         <Link
-                            style={{ textDecoration: "none" }}
-                            className='text-black'
+                            className='text-black text-decoration-none'
                             type="button"
                             to="/portfolio/aboutme">
                             About Me
                         </Link>
-                        &nbsp;&nbsp;•&nbsp;&nbsp;
+                        <span>•</span>
                         <Link
-                            style={{ textDecoration: "none" }}
-                            className='text-black'
+                            className='text-black text-decoration-none'
                             type="button"
                             to="/portfolio/contact">
                             Contact

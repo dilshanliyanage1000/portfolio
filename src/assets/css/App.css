@@ -104,6 +104,10 @@ ul {
   transition: transform 0.2s ease;
 }
 
+.text-decoration-none {
+  text-decoration: none;
+}
+
 .stat-pill {
   display: inline-flex;
   width: fit-content;
