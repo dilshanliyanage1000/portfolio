@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-import { Send } from 'lucide-react';
 
 import SkillIcon from '../components/SkillIcon';
 import Footer from '../components/Footer';
 
 import LinkedInLogo from "../assets/img/skills/linkedin.png";
 import GitHubLogo from "../assets/img/skills/github-logo.png";
+import PlaneIcon from "../assets/img/skills/airplane-icon.png";
 
 const FooterComponent = () => {
 
@@ -49,7 +49,7 @@ const FooterComponent = () => {
                         to="mailto:dilshanliyanage1000@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <Send size={18} style={{ color: "#64895F" }} />&nbsp;&nbsp;Email
+                        <SkillIcon path={PlaneIcon} />&nbsp;&nbsp;Email
                     </Link>
 
                     <p className='fs-6 gsf-medium mt-5' style={{ marginBottom: "8px" }}>Navigation</p>

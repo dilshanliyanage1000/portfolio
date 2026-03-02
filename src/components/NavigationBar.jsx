@@ -32,21 +32,21 @@ const NavigationBar = () => {
 
                         <Link
                             to="/portfolio/"
-                            className={`nav-link gsf-light fs-5 ${isActive("/portfolio/") ? "active-link" : ""}`}
+                            className={`nav-link gsf-light fs-5-5 ${isActive("/portfolio/") ? "active-link" : ""}`}
                         >
                             Work
                         </Link>
 
                         <Link
                             to="/portfolio/aboutme"
-                            className={`nav-link gsf-light fs-5 ${isActive("/portfolio/aboutme") ? "active-link" : ""}`}
+                            className={`nav-link gsf-light fs-5-5 ${isActive("/portfolio/aboutme") ? "active-link" : ""}`}
                         >
                             About Me
                         </Link>
 
                         <Link
                             to="/portfolio/contact"
-                            className={`nav-link gsf-light fs-5 ${isActive("/portfolio/contact") ? "active-link" : ""}`}>
+                            className={`nav-link gsf-light fs-5-5 ${isActive("/portfolio/contact") ? "active-link" : ""}`}>
                             Contact
                         </Link>
 
