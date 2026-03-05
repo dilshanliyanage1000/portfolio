@@ -1,11 +1,11 @@
 import { useEffect } from "react";
+import PropTypes from "prop-types";
 import Lenis from "lenis";
 
-export default function SmoothScroll() {
+export default function SmoothScroll({ onReady }) {
     useEffect(() => {
         const prefersReduced =
-            window.matchMedia &&
-            window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
 
         if (prefersReduced) return;
 
@@ -13,9 +13,9 @@ export default function SmoothScroll() {
             duration: 1.1,
             smoothWheel: true,
             smoothTouch: false,
-            wheelMultiplier: 1.0,
-            touchMultiplier: 1.0,
         });
+
+        onReady?.(lenis);
 
         let rafId;
         const raf = (time) => {
@@ -26,9 +26,14 @@ export default function SmoothScroll() {
 
         return () => {
             cancelAnimationFrame(rafId);
+            onReady?.(null);
             lenis.destroy();
         };
-    }, []);
+    }, [onReady]);
 
     return null;
 }
+
+SmoothScroll.propTypes = {
+    onReady: PropTypes.func,
+};
