@@ -24,42 +24,44 @@ const Contact = () => {
 
             <div className="full-screen-view-height">
 
-                <div className="custom-container mb-5">
+                <div className="custom-container mb-5 row">
 
-                    <p className="display-6 gsf-medium text-black"><span className="color-gradient-animation">Let&apos;s build scalable product systems</span></p>
+                    <p className="gsf-medium text-black"><span className="color-gradient-animation fs-1">Let&apos;s build scalable product systems</span></p>
 
-                    <div className="hero-subcopy-wrapper mb-5">
+                    <div className="mb-4">
                         <p className="mt-4 fs-5 gsf-light">
                             I&apos;m always open to discussing product design, design systems, workflow optimization, or new opportunities. If you&apos;re building complex digital platforms and value structured, scalable UX, I&apos;d love to connect.
                         </p>
                     </div>
 
-                    <Link
-                        type="button"
-                        className="skill-pill fs-6"
-                        to="https://www.linkedin.com/in/dilaliyanage/"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <SkillIcon path={LinkedInLogo} />&nbsp;&nbsp;LinkedIn
-                    </Link>
+                    <div>
+                        <Link
+                            type="button"
+                            className="skill-pill fs-6"
+                            to="https://www.linkedin.com/in/dilaliyanage/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <SkillIcon path={LinkedInLogo} />&nbsp;&nbsp;LinkedIn
+                        </Link>
 
-                    <Link
-                        type="button"
-                        className="skill-pill fs-6"
-                        to="https://github.com/dilshanliyanage1000"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <SkillIcon path={GitHubLogo} />&nbsp;&nbsp;GitHub
-                    </Link>
+                        <Link
+                            type="button"
+                            className="skill-pill fs-6"
+                            to="https://github.com/dilshanliyanage1000"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <SkillIcon path={GitHubLogo} />&nbsp;&nbsp;GitHub
+                        </Link>
 
-                    <Link
-                        type="button"
-                        className="skill-pill fs-6"
-                        to="mailto:dilshanliyanage1000@gmail.com"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <SkillIcon path={PlaneIcon} />&nbsp;&nbsp;Email
-                    </Link>
+                        <Link
+                            type="button"
+                            className="skill-pill fs-6"
+                            to="mailto:dilshanliyanage1000@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <SkillIcon path={PlaneIcon} />&nbsp;&nbsp;Email
+                        </Link>
+                    </div>
 
                     <p className='fs-6 gsf-medium mt-5' style={{ marginBottom: "8px", marginTop: "85px" }}>Navigation</p>
 
